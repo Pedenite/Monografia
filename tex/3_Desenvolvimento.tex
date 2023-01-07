@@ -4,21 +4,39 @@ O desenvolvimento do aplicativo móvel \appName\ foi feito utilizando diversas t
 
 O processo de \textit{software} é visto por uma sequência de atividades
 que produzem uma variedade de documentos, resultando em um programa
-satisfatório e executável \cite{processos_software}. Cada vez mais, os processos se mostram tão importantes quanto o \textit{software} em si, sendo indispensáveis para a produção de um produto de maior qualidade. O desenvolvimento da aplicação foi feito utilizando metodologias ágeis, aplicando conceitos do Scrum.
+satisfatório e executável \cite{processos_software}. Cada vez mais, os processos se mostram tão importantes quanto o \textit{software} em si, sendo indispensáveis para a produção de um produto de maior qualidade. O desenvolvimento da aplicação foi feito utilizando conceitos de metodologias ágeis como o Scrum.
 
-\cite{agile_software_development}
+O movimento ágil da indústria de \textit{software} se iniciou com a publicação do manifesto ágil\footnote{\url{https://agilemanifesto.org/}} em 2001 por um grupo de praticantes e consultores de \textit{software} \cite{agile_software_development}. O manifesto agrega os seguintes valores:
 
-Todos os recursos e programas utilizados durante qualquer etapa do projeto \appName\ foram de licença livre ou de uso gratuito. Inicialmente, para o desenvolvimento do aplicativo móvel, foram criados protótipos de telas do projeto, o que facilitaria a criação das telas funcionais posteriormente. Durante esta etapa, o estilo do aplicativo foi definido, incluindo as cores predominantes, diferentes telas pertencentes à interface de usuário, rotas de navegação e as funções acessíveis por cada uma das telas projetadas. Tudo isso conferiu uma identidade ao projeto de \textit{software}.
+\begin{itemize}
+    \item \textbf{Indivíduos e Interações} acima de processos e ferramentas;
+    \item \textbf{\textit{Software} em funcionamento} acima de uma documentação compreensiva;
+    \item \textbf{Colaboração com o cliente} acima de negociações de contrato;
+    \item \textbf{Responder a mudanças} mais que seguir um plano;
+\end{itemize}
 
-TODO: referência sobre a psicologia das cores.
+Scrum é um \textit{framework} que ajuda as pessoas, times e organizações a gerar valor através de soluções adaptáveis para problemas complexos \cite{scrum_guide}. De forma resumida, o Scrum requer uma pessoa denominada \textit{Scrum Master} para controlar um ambiente caracterizado por:
 
-Com o protótipo inicial criado e aprovado, foi utilizado um \textit{software} de organização de tarefas para realizar o cadastro dos itens a serem implementados no aplicativo. Com a separação dos itens entre a dupla, foi iniciado o desenvolvimento do aplicativo em questão, sendo usados conceitos de metodologias ágeis, incluindo reuniões diárias e quadro kanban.
+\begin{enumerate}
+    \item O dono do produto (\textit{Product Owner}) solicita o trabalho para um item complexo que é enviado para o \textit{Product Backlog};
+    \item O time transforma os itens selecionados em subitens de valor incremental durante uma fase denominada \textit{Sprint};
+    \item O time, juntamente com as partes interessadas, avaliam os resultados e fazem os planejamentos e ajustes necessários para a próxima \textit{Sprint};
+    \item Processo se repete com a nova \textit{Sprint}.
+\end{enumerate}
+
+A aplicação do Scrum no \appName\ foi feita de forma parcial. Foram usadas Sprints para as diversas fases do projeto, incluindo a revisão das tarefas concluídas e o planejamento das próximas tarefas, onde as tarefas do \textit{backlog} são selecionadas para entrar no escopo da Sprint conforme necessidade. É comum no Scrum a ocorrência de reuniões diárias para que a situação das tarefas sejam compartilhadas entre a equipe e os impedimentos sejam expostos para que seja buscada uma solução, porém, por se tratar de uma equipe de apenas duas pessoas e sem a presença de um Scrum Master, a frequência das reuniões foi diminuida, ocorrendo, no mínimo uma vez por semana.
+
+Diversos recursos e programas foram utilizados para auxiliar nos processos de desenvolvimento do \appName\, sendo todos de licença livre ou de uso gratuito. Antes de iniciar o desenvolvimento do \textit{software}, foram criados protótipos de telas do projeto, a fim de facilitar a criação das telas funcionais posteriormente. Durante esta etapa, o estilo do aplicativo foi definido, incluindo as cores predominantes, diferentes telas pertencentes à interface de usuário, rotas de navegação e as funções acessíveis por cada uma das telas projetadas. Tudo isso conferiu uma identidade ao projeto de \textit{software}.
+
+Com o protótipo inicial criado e aprovado, foi utilizado um \textit{software} de organização de tarefas para realizar o cadastro dos itens a serem implementados no aplicativo. Com o início da primeira Sprint, os primeiros cards a serem resolvidos foram divididos entre a dupla e foi iniciado o desenvolvimento do aplicativo em questão.
+
+A seguir, algumas das ferramentas utilizadas no processo de planejamento e desenvolvimento do \appName\ são descritas, assim como os artefatos produzidos em cada uma delas.
 
 \subsection{Figma}
 
-TODO: referência sobre a importância dos protótipos em um projeto de software.
+Segundo Connel e Shaffer \cite{prototyping}, um protótipo de \textit{software} é um modelo dinâmico visual que oferece uma ferramenta de comunicação para o cliente e para o desenvolvedor que é bem mais efetiva do que qualquer prosa narrativa ou modelos estáticos visuais para representar funcionalidade. O \textit{software} Figma\footnote{\url{https://www.figma.com/}} é uma plataforma de design hospedada em formato de aplicação \textit{Web} que facilita a criação de protótipos para aplicativos \textit{mobile}, \textit{web}, e muitos outros.
 
-Para a criação dos protótipos, foi utilizado o \textit{software} Figma de forma gratuita. Trata-se de uma plataforma para design hospedada em formato de aplicação \textit{Web} que permite a criação de conta para o uso gratuito, porém também possuindo planos pagos de assinatura. Com as ferramentas disponibilizadas pelo figma, foram prototipadas todas as telas do aplicativo de acordo com a ideia inicial do projeto, assim como o fluxo de navegação por parte do usuário final. O protótipo pode ser dividido em 4 partes:
+A criação dos protótipos foi feita utilizado o Figma de forma gratuita. A plataforma permite a criação de conta para o uso gratuito, porém também possui planos pagos de assinatura. Com as ferramentas disponibilizadas pelo figma, foram prototipadas todas as telas do aplicativo de acordo com a ideia inicial do projeto, assim como o fluxo de navegação por parte do usuário final. O protótipo pode ser dividido em 4 partes:
 
 \subsubsection{Autenticação}
 
@@ -48,11 +66,11 @@ Rota composta por 3 telas mostradas na \refFig{figma_account}, acessíveis pela 
 
 \figura[H]{../img/figma_account.png}{Protótipos de telas pertencentes às rotas de gerenciamento de conta}{figma_account}{width=0.75\textwidth}
 
-\subsection{\textit{Lucid Charts}}
+\subsection{\textit{Lucid Chart}}
 
 TODO: referência da importância de fluxogramas
 
-\textit{Lucid Charts} é uma ferramenta \textit{online} com plano gratuito para realizar o desenho de fluxos, podendo ser feito de forma colaborativa. Com as ferramentas disponibilizadas pela plataforma, foi criado o fluxograma da \refFig{fluxo_app}, que mostra as funcionalidades acessíveis pelo usuário final por cada tela. Também é mostrado o funcionamento básico dos desafios incluídos na plataforma, que fornecem uma pontuação ao usuário somente quando a pergunta é respondida corretamente.
+\textit{Lucid Chart}\footnote{\url{https://www.lucidchart.com/}} é uma ferramenta \textit{online} com plano gratuito para realizar o desenho de fluxos, podendo ser feito de forma colaborativa. Com as ferramentas disponibilizadas pela plataforma, foi criado o fluxograma da \refFig{fluxo_app}, que mostra as funcionalidades acessíveis pelo usuário final por cada tela. Também é mostrado o funcionamento básico dos desafios incluídos na plataforma, que fornecem uma pontuação ao usuário somente quando a pergunta é respondida corretamente.
 
 \figura[H]{../img/fluxo_app.png}{Fluxo de utilização do \appName\ na visão do usuário}{fluxo_app}{width=\textwidth}
 
@@ -62,7 +80,7 @@ Pela \refFig{fluxo_app}, é possível visualizar o início e o fim do fluxo de u
 
 TODO: referência sobre metodologias ágeis e kanban.
 
-O software \textit{Notion} é uma plataforma de produtividade utilizada principalmente para organizar trabalhos em equipe. A ferramenta dispõe de diversos recursos relacionados a metodologias ágeis, documentação, métricas, entre outros, porém para o \appName, foi utilizado apenas o quadro kanban para a divisão e organização das tarefas do projeto.
+O software \textit{Notion}\footnote{\url{https://www.notion.so/}} é uma plataforma de produtividade utilizada principalmente para organizar trabalhos em equipe. A ferramenta dispõe de diversos recursos relacionados a metodologias ágeis, documentação, métricas, entre outros, porém para o \appName, foi utilizado apenas o quadro kanban para a divisão e organização das tarefas do projeto.
 
 \subsection{Git e Git Flow}
 
@@ -84,7 +102,7 @@ Para o desenvolvimento do projeto de \textit{software}, diversas tecnologias for
 
 \subsection{Android}
 
-Android é o sistema operacional para \textit{smartphones} mais utilizado na atualidade, possuindo uma quota de mercado de 71.96\% segundo dados de Novembro de 2022 \cite{mobile-os}. Trata-se de um sistema \textit{open-source} baseado em Linux composto por uma pilha criada para suportar uma vasta quantidade de dispositivos e aspectos dos mesmos \cite{android}. A hierarquia do sistema android pode ser vista da seguinte forma:
+Android\footnote{\url{https://www.android.com/}} é o sistema operacional para \textit{smartphones} mais utilizado na atualidade, possuindo uma quota de mercado de 71.96\% segundo dados de Novembro de 2022 \cite{mobile-os}. Trata-se de um sistema \textit{open-source} baseado em Linux composto por uma pilha criada para suportar uma vasta quantidade de dispositivos e aspectos dos mesmos \cite{android}. A hierarquia do sistema android pode ser vista da seguinte forma:
 
 \begin{itemize}
     \item \textbf{Aplicativos do sistema}: Todos os aplicativos que interagem diretamente com o usuário como calculadora, câmera, e-mail, entre outros;
@@ -98,29 +116,29 @@ Todo o código do aplicativo \appName\ foi testado no sistema Android, porém, d
 
 \subsection{Typescript}
 
-Typescript é uma linguagem de programação \textit{open-source} fortemente tipada que foi desenvolvida e é mantida pela Microsoft e é construída em cima da linguagem Javascript, permitindo um melhor uso ferramental a qualquer escala \cite{typescript}. Por sua vez, Javascript é uma linguagem leve, interpretada ou compilada \textit{just-in-time} com funções de primeira classe. É uma linguagem multi-paradigma que é usada vastamente em páginas da \textit{Web}, mas também tem ganhado uma popularidade explosiva em sistemas \textit{back-end} e \textit{Mobile} com tecnologias como Node.js e React Native \cite{javascript}.
+Typescript\footnote{\url{https://www.typescriptlang.org/}} é uma linguagem de programação \textit{open-source} fortemente tipada que foi desenvolvida e é mantida pela Microsoft e é construída em cima da linguagem Javascript, permitindo um melhor uso ferramental a qualquer escala \cite{typescript}. Por sua vez, Javascript é uma linguagem leve, interpretada ou compilada \textit{just-in-time} com funções de primeira classe. É uma linguagem multi-paradigma que é usada vastamente em páginas da \textit{Web}, mas também tem ganhado uma popularidade explosiva em sistemas \textit{back-end} e \textit{Mobile} com tecnologias como Node.js e React Native \cite{javascript}.
 
 A escolha da linguagem se deu por razões pessoais como a familiaridade com a linguagem e devido às opções que o typescript proporciona em relação à tipagem, que têm a capacidade de aumentar a produtividade ao se utilizar editores de texto avançados, assim como diminuir a quantidade de erros em tempo de execução
 
 \subsection{React e React Native}
 \label{react-section}
 
-React é uma biblioteca Javascript para realizar a criação de interfaces de usuário. Trata-se de um projeto \textit{open-source} criado e mantido pela empresa Meta. A ideia geral da biblioteca é ser declarativa, baseada em componentes e multi-plataforma, permitindo a criação de um código modularizado mais simples de debugar, e que pode ser convertido para outras plataformas de forma relativamente fácil \cite{react}.
+React\footnote{\url{https://reactjs.org/}} é uma biblioteca Javascript para realizar a criação de interfaces de usuário. Trata-se de um projeto \textit{open-source} criado e mantido pela empresa Meta. A ideia geral da biblioteca é ser declarativa, baseada em componentes e multi-plataforma, permitindo a criação de um código modularizado mais simples de debugar, e que pode ser convertido para outras plataformas de forma relativamente fácil \cite{react}.
 
 A sintaxe do React utiliza a extensão de sintaxe do Javascript chamada JSX, que se assemelha muito com a sintaxe de linguagens de marcação de texto como HTML e XML, porém traduzindo a sintaxe para códigos Javascript. Por este motivo, a biblioteca pode ser aprendida com uma certa facilidade por desenvolvedores que já estejam familiarizados com o desenvolvimento web nativo usando HTML.
 
-React Native compartilha dos mesmos princípios, funcionalidades e sintaxe do React para o desenvolvimento de aplicativos nativos. Os componentes presentes no código escrito em react native são transformados em elementos de interfaces de usuário utilizando a API da própria plataforma onde será executado. O \textit{framework} facilita o desenvolvimento para plataformas móveis de forma a utilizar o mesmo código tanto no Android como no iOS, não exigindo muito retrabalho ao criar suporte a outras plataformas para o aplicativo. Assim como React, o React Native é uma biblioteca \textit{open-source} mantida pela Meta \cite{react-native}.
+React Native\footnote{\url{https://reactnative.dev}} compartilha dos mesmos princípios, funcionalidades e sintaxe do React para o desenvolvimento de aplicativos nativos. Os componentes presentes no código escrito em react native são transformados em elementos de interfaces de usuário utilizando a API da própria plataforma onde será executado. O \textit{framework} facilita o desenvolvimento para plataformas móveis de forma a utilizar o mesmo código tanto no Android como no iOS, não exigindo muito retrabalho ao criar suporte a outras plataformas para o aplicativo. Assim como React, o React Native é uma biblioteca \textit{open-source} mantida pela Meta \cite{react-native}.
 
 A escolha das ferramentas para o projeto \appName foi devido à familiaridade com a mesma por parte da dupla, não exigindo um treinamento extensivo para seu uso no projeto. A aplicação móvel, chamada de \textit{front-office} foi desenvolvida usando React Native, enquanto a versão \textit{Web}, \textit{back-office}, foi desenvolvida utilizando React.
 
 \subsection{Visual Studio Code}
 
-Visual Studio Code é um editor de código fonte leve, mas com recursos poderosos, disponível gratuitamente para os sistemas operacionais Windows, Linux e macOS. A ferramenta \textit{open-source} tem suporte \textit{built-in} para JavaScript, TypeScript e Node.js e possui um ecossistema rico de extensões para outras linguagens e ambientes de execução \cite{vscode}.
+Visual Studio Code\footnote{\url{https://code.visualstudio.com/}} é um editor de código fonte leve, mas com recursos poderosos, disponível gratuitamente para os sistemas operacionais Windows, Linux e macOS. A ferramenta \textit{open-source} tem suporte \textit{built-in} para JavaScript, TypeScript e Node.js e possui um ecossistema rico de extensões para outras linguagens e ambientes de execução \cite{vscode}.
 
 A escolha do editor foi feita por preferência pessoal dos autores do \appName, sendo os principais fatores decisivos, a familiaridade com a ferramenta, o suporte nativo para Typescript e React e a gratuidade. O Visual Studio Code também inclui o \textit{Intellisense}, que é uma ferramenta que provê \textit{auto-complete} inteligente para o código, baseando-se em análises semânticas da linguagem usada e na análise do código-fonte escrito \cite{intellisense}. O Visual Studio Code juntamente com o Intellisense permitiu uma maior produtividade durante todos o processo de desenvolvimento do aplicativo.
 
 \subsection{Firebase}
 
-Firebase \cite{firebase} é uma plataforma de desenvolvimento de aplicações que auxilia na criação e no crescimento delas. A plataforma pertence ao Google e é gratuita de forma limitada, sendo necessário aderir a um plano pago para continuar utilizando após atingir uma quota. Dentre os serviços oferecidos, podem ser encontrados serviços de autenticação e gerenciamento de usuários e banco de dados. A plataforma adere à categoria de serviço \textit{low-code}, onde o programador tem acesso a um sistema de \textit{backend} utilizando poucas linhas de código, sendo necessário apenas criar a aplicação que irá consumir os serviços.
+Firebase\footnote{\url{https://firebase.google.com/}} é uma plataforma de desenvolvimento de aplicações que auxilia na criação e no crescimento delas \cite{firebase}. A plataforma pertence ao Google e é gratuita de forma limitada, sendo necessário aderir a um plano pago para continuar utilizando após atingir uma quota. Dentre os serviços oferecidos, podem ser encontrados serviços de autenticação e gerenciamento de usuários e banco de dados. A plataforma adere à categoria de serviço \textit{low-code}, onde o programador tem acesso a um sistema de \textit{backend} utilizando poucas linhas de código, sendo necessário apenas criar a aplicação que irá consumir os serviços.
 
 O aplicativo desenvolvido utiliza o serviço de autenticação do Firebase e também o banco de dados da plataforma, denominado \textit{Firestore}, que é um banco de dados NoSQL em núvem flexível e escalável para armazenar e sincronizar dados para o desenvolvimento do lado do cliente e do servidor \cite{firestore}. A escolha da ferramenta se deu pela flexibilidade e as boas condições do plano gratuito, que atenderam todas as necessidades do projeto.
