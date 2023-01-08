@@ -18,16 +18,52 @@ Versão \textit{mobile} do \appName, possui as seguintes características:
 
 \subsection{Login e Registro}
 
-Ao acessar o aplicativo pela primeira vez, será requisitado que o usuário realize o \textit{Login} na plataforma, conforme mostrado na \refFig{login}
+Ao acessar o aplicativo pela primeira vez, será requisitado que o usuário realize o \textit{Login} na plataforma, conforme mostrado na primeira tela da \refFig{login}.
 
-\figura[H]{../img/app/login.jpeg}{Tela de \textit{Login} do aplicativo}{login}{width=0.30\textwidth}
+\figura[H]{../img/app/login-pre-home.png}{Telas de \textit{Login}, Registro e Pré-Home do aplicativo}{login}{width=\textwidth}
 
-A tela possui os campos de \textit{E-mail} e Senha para que seja possível a validação dos dados para realizar o login do usuário ou exibir uma mensagem de erro caso os dados estejam incorretos. A tela possui abaixo do botão de login, um seletor para lembrar do usuário que tem a função de diminuir a incidência de logins e também possui um elemento clicável para recuperar a senha de usuário pelo e-mail cadastrado. Por fim, no final da página, encontra-se o botão que leva à tela de registro de usuário. Ao clicar no botão "registre-se aqui", o usuário será levado à tela de registro, confome \refFig{register}.
+A tela possui os campos de \textit{E-mail} e Senha para que seja possível a validação dos dados para realizar o login do usuário ou exibir uma mensagem de erro caso os dados estejam incorretos. Abaixo do botão de login, existe um seletor para lembrar do usuário que tem a função de diminuir a incidência de logins e também possui um elemento clicável para recuperar a senha de usuário pelo e-mail cadastrado. Por fim, no final da página, encontra-se o botão que leva à tela de registro de usuário. Ao clicar no botão "registre-se aqui", o usuário será levado à tela de registro.
 
-TODO: LGPD
+Na tela de Registro, o usuário será capaz de se cadastrar, bastando preencher os dados de nome completo, e-mail, data de nascimento, formação acadêmica e senha, sendo necessária confirmação. O usuário somente poderá se cadastrar se aceitar as políticas de privacidade, que podem ser acessadas pelo link presente na checkbox no final do formulário. Esta medida serve para deixar o \textit{software} em conformidade com a Lei Geral da Proteção de Dados (LGPD) \cite{lgpd}.
 
-\figura[H]{../img/app/register.jpeg}{Tela de Registro do aplicativo}{register}{width=0.30\textwidth}
+Com a conta criada e validada corretamente o aplicativo vai redirecionar para a tela de login, onde o usuário deverá digitar as informações de login e senha para finalmente acessar as funcionalidades do aplicativo, iniciando pela tela Pré-Home.Nesta tela, o estudante poderá escolher a plataforma que irá acessar. Todos os usuários terão acesso à plataforma global, mas os professores podem cadastrar novos times no \appName\ por meio do \textit{Back Office} e matricular estudantes. À medida que o estudante é matriculado nos times, mais opções aparecem na Pré-Home abaixo da plataforma global para o acesso.
+
+\subsection{Home e Navegação}
+\label{home_navegacao}
+
+Ao acessar o time selecionado, o usuário é redirecionado para a tela Home do curso em específico. Nesta tela, existe uma barra de navegação que permite o acesso às telas de Home, Conta e Mensagens.
+
+\figura[H]{../img/app/barra_navegacao.png}{Telas acessíveis pela barra de navegação: Home, Conta e Mensagens}{navegacao}{width=\textwidth}
+
+Pela tela Home, é possível visualizar uma barra de pesquisa para filtrar os tópicos exibidos do curso logo abaixo e o ranking de usuários, que é ligado aos pontos obtidos. Pressionando o subtítulo "Tópicos", é possível acessar uma tela que exibe todos os tópicos. O mesmo vale para a seção de ranking.
+
+O segundo ícone da barra de navegação leva à tela de Conta, onde o usuário pode visualizar e editar as suas informações pessoais, assim como fazer o logout. Ao final da seção em destaque da tela, também existem links que levam para sites que contém a política de privacidade, perguntas frequentes e ajuda da aplicação.
+
+Já o terceiro ícone, representa a tela de mensagens. Nela, é possível visualizar todas as conversas que foram iniciadas com os diferentes usuários da plataforma. Se houverem mensagens não lidas, um ícone azul com a quantidade de mensagens não lidas irá aparecer ao lado direito do nome do usuário. Selecionando um usuário listado, é possível continuar a conversa com o mesmo por meio da ferramenta de Chat.
+
+\subsection{Ranking e Pountuação}
+\label{ranking}
+
+Conforme mostrado na Seção \ref{home_navegacao}, a tela Home exibe o \textit{ranking} do time, porém limitado a dez registros que são ordenados pelos pontos obtidos. Ao pressionar o subtítulo "Ranking", o usuário é levado à página dedicada ao \textit{ranking} de usuário, onde é possível visualizar todos os participantes do time e suas respectivas posições.
+
+TODO: imagem
+
+\subsection{Dados de Usuário}
+
+Os usuários do aplicativo são capazes de alterar os seus dados de usuário por meio da tela de Conta, pelo botão "Editar dados pessoais". Para alterar a senha, existe o botão "Alterar Senha".
+
+\figura[H]{../img/app/conta.png}{Telas para gerenciamento de conta}{conta}{width=\textwidth}
+
+Nas telas de alterar dados e senha, o usuário tem a opção de efetivar a alteração realizada, assim como a opção de descartá-las por meio do botão de voltar no canto superior esquerdo. Todas as opções disponíveis e os dados coletados estão descritos nas políticas de privacidade do aplicativo, assim como é descrita a incapacidade do usuário de deletar a sua conta diretamente ou alterar o endereço de \textit{e-mail}. Porém, nos \textit{links} disponíveis ao final da página, está descrito como proceder para a exclusão da conta e alteração de \textit{e-mail}, que seria por meio do contato por \textit{e-mail} com os responsáveis pelo aplicativo.
+
+\subsection{Conversa}
+
+A funcionalidade de \textit{Chat} da plataforma serve para intermediar a conversa por mensagens entre dois usuários. Para iniciar uma conversa com uma pessoa, basta encontrar e selecionar a pessoa na tela de ranking (\ref{ranking}). Desta forma a conversa é criada e a tela de Conversa com esta pessoa é aberta. A partir do momento em que se iniciou uma conversa com a pessoa, seu nome irá aparecer na tela de conversas para mais fácil acesso do histórico de mensagens.
+
+\figura[H]{../img/app/chat.png}{Telas para a funcionalidade de \textit{Chat}}{chat_screens}{width=\textwidth}
+
+A segunda das telas listadas sobre a funcionalidade de \textit{Chat} mostra uma conversa recém-iniciada, sem nenhuma mensagem. Já a última tela mostrada, inclui uma mensagem de cada uma das partes, demonstando o layout e funcionamento das conversas no aplicativo.
 
 \section{Back Office}
 
-
+TODO\dots
