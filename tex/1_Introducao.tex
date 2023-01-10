@@ -1,13 +1,46 @@
 Com os avanços tecnológicos observados no decorrer das últimas décadas, surgem, cada vez mais, oportunidades de melhorar os modelos existentes de ensino e aprendizagem. Nos últimos anos, a tecnologia vem se tornando uma das principais aliadas dos estudantes dentro e fora das salas de aula. Existem diversas ferramentas disponíveis para diferentes nichos educacionais, mas nem todas são gratuitas, acessíveis e, tampouco, despertam o interesse dos alunos.
 
-Pensando nessa problemática, este presente trabalho tem como objetivo, atender os estudantes que se interessam em aprender conteúdos de computação. Para isso, foi desenvolvido um aplicativo, intitulado \appName, para dispositivos móveis, onde os estudantes poderão, gratuitamente, aprender de forma prática e teórica, diversos tópicos relacionados às áreas de seu interesse.
+No âmbito computacional, essa limitação de ferramentas é um grande impeditivo. E, pensando nesta problemática, este projeto tem como objetivo criar uma plataforma digital, intitulada \appName\, para auxiliar estudantes e professores no ensino e aprendizagem de tópicos do ramo computacional. \appName\ utiliza uma abordagem \textit{gamificada} para tornar o aprendizado mais interessante e, consequentemente, mais fácil de alcançar o aluno.
 
-\appName\ usa uma abordagem \textit{gamificada} para tornar o aprendizado mais interessante e, consequentemente, mais fácil de alcançar o aluno. No aplicativo, o usuário pode acessar o tópico que deseja e realizar atividades relacionadas que são disponibilizadas em formato de questões. Cada questão respondida corretamente irá incrementar a pontuação do usuário na plataforma, contribuindo para o seu \textit{rank} geral e local (Por disciplina). O aluno, em caso de dificuldades, também pode contar com a ajuda de colegas que encontrar no \textit{ranking} que estiverem disponíveis a ajudar por meio do chat interno presente na plataforma. No \textit{ranking}, os usuários são capazes de visualizar todos os colegas e podem ver os que estão com o melhor desempenho na disciplina, sendo capazes de visitar a página do respectivo usuário onde estará disponível a opção para iniciar um \textit{chat}, assim como outras ações.
+\section{Problema}
+A busca pelo aprendizado de temáticas computacionais, comumente, está relacionada com longas horas de estudos em um ambiente silencioso e com bons equipamentos. Embora estes fatores possam facilitar o processo de aprendizagem, eles não devem ser responsáveis por limitar a busca por conhecimento. Entretanto, a falta de tempo, e de um ambiente adequado, tornam-se grandes impeditivos, capazes de gerar nos estudantes, frustrações ao iniciarem seus estudos sobre determinados assuntos.
 
-Para a progressão dos cursos, \appName\ conta com uma trilha de aprendizagem para que os estudantes possam acessar as disciplinas em uma ordem mais eficiente, de acordo com a árvore de pré-requisitos. Para usuários que já estiverem em um nível mais avançado dos cursos, uma avaliação será disponibilizada para se obter uma sugestão de curso a se fazer, porém, esta sugestão pode ser ignorada se assim o usuário desejar. Esta abordagem tem como objetivo, deixar mais consistente o uso do aplicativo na visão do usuário, que será capaz de escolher se deseja seguir o que lhe foi indicado ou seguir a sua própria rota.
+Existe uma carência de ferramentas capazes de superar estas barreiras, o que torna estas limitações, protagonistas na busca por conhecimento.
 
-Tudo o que foi descrito até o momento, mostra a visão do estudante sobre o sistema, que chamamos de \textit{front office}, porém, também existe a visão do professor sobre o \appName, que é o chamado \textit{back office}, cujo desenvolvimento está feito em formato de uma aplicação \textit{web}. Neste, o usuário, que seria o professor das disciplinas, terá acesso a ferramentas com funções mais administrativas, tais como: incluir disciplinas, matricular alunos, adicionar atividades, emitir relatórios, entre outros.
+\section{Justificativa}
+Devido a grande necessidade da construção de recursos didáticos capazes de auxiliar estudantes na busca por conhecimento de elementos da computação, este presente trabalho tem como objetivo, atender, de forma acessível, os estudantes que desejam aperfeiçoar ou adquirir conhecimentos acerca de diversas temáticas computacionais. Para isso, foi desenvolvido uma plataforma digital, que engloba um aplicativo para dispositivos móveis gamificado, onde os estudantes poderão, gratuitamente, aprender de forma prática, diversos tópicos relacionados às áreas de seu interesse. A plataforma conta também, com uma aplicação web para auxiliar professores em práticas pedagógicas.
+
+\section{Objetivo Geral}
+Construir uma plataforma digital para solucionar problemas relacionados ao processo de aprendizagem dificultoso que os estudantes enfrentam no âmbito computacional. Além disso, a plataforma serve de auxílio para professores que desejam utilizar recursos digitais em suas práticas docentes.
+
+\section{Objetivos Específicos}
+A fim de atender os objetivos finais do projeto, foram estabelecidos os seguintes objetivos específicos:
+ \begin{itemize}
+   \item Entender o perfil dos estudantes de computação;
+   \item Compreender os impactos da gamificação no processo de aprendizagem;
+   \item Construir plataforma digital, visando melhorar o ensino e aprendizagem na área de computação;
+ \end{itemize}
+
+\section{Metodologia}
+Este trabalho foi desenvolvido segundo a linha de pesquisa exploratória. Foram visitadas fontes diversas a respeito das falhas no processo de ensino e aprendizagem de diversas áreas da computação, em específico, relacionadas ao desenvolvimento do pensamento computacional. As etapas da construção do projeto estão relacionadas em:
+
+ \begin{itemize}
+   \item Pesquisa sobre os principais pontos de defasagem no ensino de computação;
+   \item Estudo sobre a abordagem da gamificação no processo de aprendizagem;
+   \item \textit{Benchmark} com as principais ferramentas de \textit{e-learning};
+   \item Estabelecer critérios de aceite; 
+   \item Construção de protótipos, fluxogramas e documentação;
+   \item Desenvolvimento das aplicações móvel e web;
+   \item Validação da plataforma por meio de testes unitários, funcionais e exploratórios;
+   \item Avaliar os impactos da plataforma na aprendizagem dos estudante, e no auxílio aos professores de computação;
+ \end{itemize}
 
 \section{Trabalhos Relacionados}
+Para que o escopo das aplicações fosse definido, e para fins de referência, foram levantados aplicativos educacionais de diversos segmentos, utilizando-se como base as fontes de pesquisa do Play Store\footnote{https://play.google.com} e Google Scholar\footnote{https://scholar.google.com/}. As principais palavras-chave utilizadas como parâmetros de busca foram: Coding Apps, E-learning, Game-based Learning e Jogos Educacionais. Com base nas pesquisas, os aplicativos que mais aproximaram-se do contexto do projeto são:
 
-placeholder
+ \begin{itemize}
+   \item Duolingo\footnote{https://pt.duolingo.com/}: aplicativo para ensino de línguas estrangeiras; Possui foco em gamificação; Alto engajamento popular; O diferencial do aplicativo é sua trilha de aprendizado, possibilitando o usuário monitorar o seu progresso por meio de uma interface amigável; Disponível gratuitamente em diversos idiomas, incluindo Português;
+   \item Khan Academy\footnote{https://pt.khanacademy.org}: aplicativo para ensino de conteúdos diversos, em especial, conteúdos acadêmicos e de desenvolvimento pessoal; Possui elementos de gamificação; Alto engajamento popular; O diferencial do aplicativo é sua seção de ensino, com professores especializados em diversas áreas do conhecimento; Disponível gratuitamente em diversos idiomas, incluindo Português;
+   \item Beecrowd\footnote{https://www.beecrowd.com.br}: aplicativo web para ensino de algoritmos e programação, focado em competição; Possui elementos de gamificação; Alto engajamento popular; O diferencial do aplicativo é seu intenso foco em programação competitiva, fazendo com que os estudantes se mantenham engajados na busca por um bom posicionamento no ranking; Disponível gratuitamente em diversos idiomas, incluindo Português.
+ \end{itemize}
+
