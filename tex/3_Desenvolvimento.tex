@@ -74,6 +74,14 @@ O \textit{Lucid Chart}\footnote{\url{https://www.lucidchart.com/}} é uma ferram
 
 Pela \refFig{fluxo_app}, é possível visualizar o início e o fim do fluxo de usabilidade do aplicativo em cor vermelha, sendo o início, o \textit{login} e o fim, o \textit{logout}. As telas foram represantadas por retângulos de cor azul e as condições por losangos de cor azul claro. Por fim, funcionalidades específicas, como a forma de incremento de ponto do desafio é representada pelo pentágono irregular de cor amarelada.
 
+\subsection{Creately}
+
+Creately \footnote{\url{https://creately.com/}} é uma área de trabalho visual que permite conectar dados. Tem diversos usos, incluindo a possibilidade de criar diagramas UML, modelos entidade relacionamento, entre outros. A ferramenta foi usada para gerar o diagrama de classes da aplicação conforme \refFig{class_diagram}.
+
+\figura[H]{../img/class_diagram.png}{Diagrama de classes do \appName}{class_diagram}{width=\textwidth}
+
+Pelo diagrama de classes, é possível visualizar as classes utilzadas no projeto, que refletem diretamente na modelagem do banco de dados não-relacional utilizado. Devido à categoria de banco de dados utilizada (\ref{firebase}), não foram gerados documentos adicionais para uma descrição mais visual da base.
+
 \subsection{Notion}
 
 O software \textit{Notion}\footnote{\url{https://www.notion.so/}} é uma plataforma de produtividade utilizada principalmente para organizar trabalhos em equipe. A ferramenta dispõe de diversos recursos relacionados a metodologias ágeis, documentação, métricas, entre outros, porém para o \appName, foi utilizado apenas o quadro kanban para a divisão e organização das tarefas do projeto, assim como para acompanhar as etapas do processo do Scrum.
@@ -132,6 +140,7 @@ Visual Studio Code\footnote{\url{https://code.visualstudio.com/}} é um editor d
 A escolha do editor foi feita por preferência pessoal dos autores do \appName, sendo os principais fatores decisivos, a familiaridade com a ferramenta, o suporte nativo para Typescript e React e a gratuidade. O Visual Studio Code também inclui o \textit{Intellisense}, que é uma ferramenta que provê \textit{auto-complete} inteligente para o código, baseando-se em análises semânticas da linguagem usada e na análise do código-fonte escrito \cite{intellisense}. O Visual Studio Code juntamente com o Intellisense permitiu uma maior produtividade durante todos o processo de desenvolvimento do aplicativo.
 
 \subsection{Firebase}
+\label{firebase}
 
 Firebase\footnote{\url{https://firebase.google.com/}} é uma plataforma de desenvolvimento de aplicações que auxilia na criação e no crescimento delas \cite{firebase}. A plataforma pertence ao Google e é gratuita de forma limitada, sendo necessário aderir a um plano pago para continuar utilizando após atingir uma quota. Dentre os serviços oferecidos, podem ser encontrados serviços de autenticação e gerenciamento de usuários e banco de dados. A plataforma adere à categoria de serviço \textit{low-code}, onde o programador tem acesso a um sistema de \textit{backend} utilizando poucas linhas de código, sendo necessário apenas criar a aplicação que irá consumir os serviços.
 
