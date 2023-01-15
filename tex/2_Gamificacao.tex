@@ -1,4 +1,4 @@
-A gamificação é o processo de implementação de elementos de \textit{design} de jogos em contextos do mundo real para propósitos diversos, fora do contexto dos jogos em si. O principal propósito dela é para gerar uma maior motivação nas pessoas ao executarem determinada atividade \cite{gamification_motivates}. Neste capítulo, serão exploradas as aplicações da gamificação no processo de ensino e aprendizagem e como ela foi aplicada no projeto \appName.
+A gamificação é o processo de implementação de elementos de \textit{design} de jogos em contextos do mundo real para propósitos diversos, fora do contexto dos jogos em si. O principal propósito dela é para gerar uma maior motivação nas pessoas ao executarem determinada atividade \cite{gamification_motivates}. Neste capítulo, serão definidos conceitos necessários para a gamificação e serão exploradas as aplicações da mesma no processo de ensino e aprendizagem e como ela foi aplicada no projeto \appName.
 
 \section{Jogos}
 
@@ -9,6 +9,8 @@ Jogo é uma expressão que define diversos conceitos diferentes, onde o signific
     \item Um sistema de regras;
     \item Um objeto.
 \end{enumerate}
+
+A definição acima se dá devido à mistura que é feita entre jogos, brincadeiras e brinquedos, que são tratados como um só na maioria dos contextos. Com os níveis definidos, é possível classificar os jogos, assim como diferenciá-los, pois mesmo se dois jogos diferentes utilizam o mesmo objeto para jogar como cartas de baralho, ainda é possível distinguí-los pelas regras, por exemplo.
 
 \section{Jogos eletrônicos}
 
@@ -26,13 +28,27 @@ Com os avanços tecnológicos dos útimos tempos, diversos setores da sociedade 
 
 A tecnologia da comunicação tem o poder de dinamizar a sala de aula, saindo de um ambiente monótono, no qual um fala e todos escutam, para um ambiente acolhedor, dinâmico com possibilidades de discussões e debates. Os novos tempos exigem um padrão educacional que esteja voltado para o desenvolvimento de um conjunto de competências e de habilidades essenciais, a fim de que os alunos possam compreender e refletir sobre a realidade, participando e agindo no contexto de uma sociedade comprometida com o futuro (SANTOS, 2010) \cite{tecnologia-professores}.
 
+\subsection{Elementos de \textit{Design} de Jogos que podem ser aplicados na Gamificação}
+
+Diversos autores apresentam vários aspectos diferentes para o \textit{design} completo de um jogo, porém uma seleção dos principais itens apresentados recorrentemente pelos autores são: pontuação, distintivos, \textit{ranking}, gráficos de performance, histórias significativas, avatares e colegas \cite{gamification_motivates}. A seguir, cada um dos itens serão descritos detalhadamente.
+
+\begin{itemize}
+    \item \textbf{Pontuação} é um elemento básico de uma multitude de jogos e aplicações gamificadas, que representa o sucesso em cumprir  determinadas atividade dentro do ambiente do jogo, representando o progresso do jogador. Dentre os principais propósitos dos pontos, estão o de permitir um \textit{feedback} para o jogador e o de servir como uma recompensa pelo trabalho feito no ambiente do jogo;
+    \item \textbf{Distintivos} são representações visuais de uma ou mais conquistas e podem ser obtidos ou coletados dentro do ambiente do jogo. Têm como função, confirmar a conquista do jogador, simbolizando o mérito;
+    \item \textbf{\textit{Ranking}} é uma classificação de jogadores que é feita com base no seu sucesso relativo, sendo medido de acordo com algum critério determinado pelo jogo, como por exemplo, a própria pontuação. Os efeitos motivadores de um sistema de classificação podem variar bastante, podendo causar uma grande motivação em pessoas que estão a poucos passos de passar de posição, mas também servindo como um desmotivador para os jogadores que se encontram no fundo da classificação \cite{ranking_motivation}. Apesar disso, a competição causada por um ranqueamento, pode criar uma pressão social para aumentar o nível de engajamento do jogador e, consequentemente, ter um efeito construtivo na participação e resultado \cite{ranking_competition};
+    \item \textbf{Gráficos de Performance} são mais usados em jogos de simulação ou estratégia e permitem aos jogadores, o acesso à informações sobre a sua evolução no jogo, comparando a performance da partida atual com as anteriores. Ao contrário de um \textit{ranking}, o gráfico de performance não compara a perormance do jogador com outros jogadores, mas sim avalia a evolução de sua performance ao longo do tempo;
+    \item \textbf{Histórias Significativas} não se relacionam com a performance do jogador. O contexto narrativo em que uma aplicação gamificada pode ser incorporada, contextualiza as atividades e características do jogo, aplicando um significado que vai além da tarefa de obter pontos e conquistas, o que pode gerar resultado positivos para a inspiração e engajamento dos jogadores, principalmente se a história estiver de acordo com seus interesses pessoais \cite{meaningful-gamification};
+    \item \textbf{Avatares} são representações visuais do jogador dentro do ambiente do jogo, que podem ser escolhidos ou criados pelo jogador. Avatares permitem que os jogadores adotem ou criem uma nova identidade dentro do jogo;
+    \item \textbf{Colegas} podem introduzir no jogo, o conflito, a competição e a cooperação \cite{kapp_gamification}. A cooperação pode ser obtida por meio da introdução de times, ao definir grupos de jogadores que trabalham em conjunto para atingir um determinado objetivo mútuo \cite{ranking_motivation}.
+\end{itemize}
+
 \section{O Ensino de Computação}
 
 A área de Tecnologia da Informação e Comunicação (TIC) é um dos setores que mais tem crescido nos últimos anos em relação à demanda, oportunidades e, consequentemente, procura por qualificação profissional \cite{brasscom-tic}. Com isso, cursos da área de computação, em especial têm mostrado uma alta procura, porém, ao mesmo tempo, mostram uma das maiores taxas de evasão dentre as formações superiores e técnicas, apresentando uma taxa de evasão média anual de 51,46\% entre 2015 e 2019 para o curso de sistemas para internet analisado do Instituto Federal do Tocantins e uma taxa de 27,08\% para o curso de ciência da computação ofertado pela Universidade Federal do Tocantins \cite{evasao-computacao}.
 
 Os motivos para a evasão escolar podem ser diversos, sendo classificados como internos ou externos. Cabe à instituição de ensino tomar as medidas necessárias para diminuir as altas taxas de evasão ao analizar os motivos para chegar em uma solução. Todavia, um método de ensino mais inclusivo teria uma boa capacidade de manter os alunos engajados no curso e promover um melhor aprendizado.
 
-Com isso em mente, o \appName\ foi desenvolvido, utilizando dos conceitos de gamificação para auxiliar no processo de aprendizagem. As ferramentas para o uso da gamificação são disponibilizadas para o professor que decide usar a plataforma montar o seu curso e matricular os alunos. O detalhamento destas funcionalidades será descrito a seguir.
+Com isso em mente, o \appName\ foi desenvolvido, utilizando dos conceitos de gamificação para auxiliar no processo de aprendizagem. As ferramentas para o uso da gamificação são disponibilizadas para que o professor que decide usar a plataforma seja capaz de montar o seu curso e matricular os alunos, assim como acompanhar os seus desempenhos. O detalhamento destas funcionalidades será descrito a seguir.
 
 \section{Gamificação no \appName}
 
