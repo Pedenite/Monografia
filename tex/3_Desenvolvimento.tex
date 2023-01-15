@@ -26,13 +26,41 @@ Scrum é um \textit{framework} que ajuda as pessoas, times e organizações a ge
 
 A aplicação do Scrum no \appName\ foi feita de forma parcial. Foram usadas Sprints para as diversas fases do projeto, incluindo a revisão das tarefas concluídas e o planejamento das próximas tarefas, onde as tarefas do \textit{backlog} são selecionadas para entrar no escopo da Sprint conforme necessidade. É comum no Scrum a ocorrência de reuniões diárias para que a situação das tarefas sejam compartilhadas entre a equipe e os impedimentos sejam expostos para que seja buscada uma solução, porém, por se tratar de uma equipe de apenas duas pessoas e sem a presença de um Scrum Master, a frequência das reuniões foi diminuida, ocorrendo, no mínimo uma vez por semana.
 
-Diversos recursos e programas foram utilizados para auxiliar nos processos de desenvolvimento do \appName\, sendo todos de licença livre ou de uso gratuito. Antes de iniciar o desenvolvimento do \textit{software}, foram criados protótipos de telas do projeto, a fim de facilitar a criação das telas funcionais posteriormente. Durante esta etapa, o estilo do aplicativo foi definido, incluindo as cores predominantes, diferentes telas pertencentes à interface de usuário, rotas de navegação e as funções acessíveis por cada uma das telas projetadas. Tudo isso conferiu uma identidade ao projeto de \textit{software}.
+O \textit{framework} Scrum não tem uma lista de artefatos de documentação obrigatórios a se produzir, pois se trata de uma metodologia ágil, caracterizada pelo contato pessoal e o funcoinamento do produto acima de uma documentação expressiva. Porém, as documentações não são proibidas, e devem ser produzidas conforme a necessidade da equipe e do cliente, servindo como critérios de aceite ou como referência interna para auxiliar no desenvolvimento ou manutenções futuras. Para o projeto, foram desenvolvidos poucos artefatos conforme a necessidade surgia.
 
-Com o protótipo inicial criado e aprovado, foi utilizado um \textit{software} de organização de tarefas para realizar o cadastro dos itens a serem implementados no aplicativo. Com o início da primeira Sprint, os primeiros cards a serem resolvidos foram divididos entre a dupla e foi iniciado o desenvolvimento do aplicativo em questão.
+Diversos recursos e programas foram utilizados para auxiliar nos processos de desenvolvimento do \appName\, sendo todos de licença livre ou de uso gratuito. Antes de iniciar o desenvolvimento do \textit{software}, foram criados protótipos de telas do projeto, a fim de facilitar a criação das telas funcionais posteriormente. Durante esta etapa, o estilo do aplicativo foi definido, incluindo as cores predominantes, diferentes telas pertencentes à interface de usuário, rotas de navegação e as funções acessíveis por cada uma das telas projetadas. Tudo isso conferiu uma identidade ao projeto de \textit{software}. A seguir, estão descritos os demais artefatos produzidos durante o desenvolvimento do \appName:
 
-A seguir, algumas das ferramentas utilizadas no processo de planejamento e desenvolvimento do \appName\ são descritas, assim como os artefatos produzidos em cada uma delas.
+\begin{itemize}
+    \item Protótipos de telas (\ref{figma});
+    \item Fluxo de utilização da aplicação (\ref{lucidChart});
+    \item Histórias de Usuário;
+    \item Diagrama de classes (\ref{creately}).
+\end{itemize}
+
+Com o protótipo inicial criado e aprovado, foi utilizado um \textit{software} de organização de tarefas para realizar o cadastro dos itens a serem implementados no aplicativo e foram criadas histórias de usuário para documentar os critérios de aceite e as funcionalidades a serem desenvolvidas. As histórias foram criadas conforme o exemplo a seguir:
+
+\textbf{Como} usuário, 
+\textbf{eu quero} ser capaz de fazer login com as minhas credenciais no sistema, 
+\textbf{para} acessar as funcionalidades da plataforma.
+
+Critério de Aceitação 01:
+\begin{enumerate}
+    \item Usuário digita as suas credenciais corretamente e pressiona no botão de login;
+    \item Usuário acessa a ferramenta normalmente com a sua conta.
+\end{enumerate}
+
+Criério de Aceitação 02:
+\begin{enumerate}
+    \item Usuário digita as credenciais incorretas e pressiona o botão de login;
+    \item Acesso negado e mensagem de erro explicativa é mostrada na tela.
+\end{enumerate}
+
+As demais histórias de usuário podem ser acessadas por meio do repositório auxiliar\footnote{\url{https://pedenite.github.io/monografia-pages/user_stories.pdf}} criado para o projeto no GitHub (\ref{git}).
+
+Com o início da primeira Sprint, os primeiros cards pendentes de resolução foram divididos entre a dupla e foi iniciado o desenvolvimento do aplicativo em questão. A seguir, algumas das ferramentas utilizadas no processo de planejamento e desenvolvimento do \appName\ são descritas, assim como os artefatos produzidos em cada uma delas.
 
 \subsection{Figma}
+\label{figma}
 
 Segundo Connel e Shaffer \cite{prototyping}, um protótipo de \textit{software} é um modelo dinâmico visual que oferece uma ferramenta de comunicação para o cliente e para o desenvolvedor que é bem mais efetiva do que qualquer prosa narrativa ou modelos estáticos visuais para representar funcionalidade. O \textit{software} Figma\footnote{\url{https://www.figma.com/}} é uma plataforma de design hospedada em formato de aplicação \textit{Web} que facilita a criação de protótipos para aplicativos \textit{mobile}, \textit{web}, e muitos outros.
 
@@ -67,6 +95,7 @@ Rota composta por 3 telas mostradas na \refFig{figma_account}, acessíveis pela 
 \figura[H]{../img/figma_account.png}{Protótipos de telas pertencentes às rotas de gerenciamento de conta}{figma_account}{width=0.75\textwidth}
 
 \subsection{\textit{Lucid Chart}}
+\label{lucidChart}
 
 O \textit{Lucid Chart}\footnote{\url{https://www.lucidchart.com/}} é uma ferramenta \textit{online} com plano gratuito para realizar o desenho de fluxos, podendo ser feito de forma colaborativa. Com as ferramentas disponibilizadas pela plataforma, foi criado o fluxograma da \refFig{fluxo_app}, que mostra as funcionalidades acessíveis pelo usuário final por cada tela. Também é mostrado o funcionamento básico dos desafios incluídos na plataforma, que fornecem uma pontuação ao usuário somente quando a pergunta é respondida corretamente.
 
@@ -75,6 +104,7 @@ O \textit{Lucid Chart}\footnote{\url{https://www.lucidchart.com/}} é uma ferram
 Pela \refFig{fluxo_app}, é possível visualizar o início e o fim do fluxo de usabilidade do aplicativo em cor vermelha, sendo o início, o \textit{login} e o fim, o \textit{logout}. As telas foram represantadas por retângulos de cor azul e as condições por losangos de cor azul claro. Por fim, funcionalidades específicas, como a forma de incremento de ponto do desafio é representada pelo pentágono irregular de cor amarelada.
 
 \subsection{Creately}
+\label{creately}
 
 Creately \footnote{\url{https://creately.com/}} é uma área de trabalho visual que permite conectar dados. Tem diversos usos, incluindo a possibilidade de criar diagramas UML, modelos entidade relacionamento, entre outros. A ferramenta foi usada para gerar o diagrama de classes da aplicação conforme \refFig{class_diagram}.
 
@@ -87,10 +117,18 @@ Pelo diagrama de classes, é possível visualizar as classes utilzadas no projet
 O software \textit{Notion}\footnote{\url{https://www.notion.so/}} é uma plataforma de produtividade utilizada principalmente para organizar trabalhos em equipe. A ferramenta dispõe de diversos recursos relacionados a metodologias ágeis, documentação, métricas, entre outros, porém para o \appName, foi utilizado apenas o quadro kanban para a divisão e organização das tarefas do projeto, assim como para acompanhar as etapas do processo do Scrum.
 
 \subsection{Git e Git Flow}
+\label{git}
 
 Git\footnote{\url{https://git-scm.com/}} é uma ferrameta ce controle de versão particularmente poderosa e flexível que torna o devenvolvimento colaborativo mais eficiente \cite{git}. A ferramenta foi inventada por Linus Torvalds para suportar o desenvolvimento do \textit{kernel} do Linux, mas se mostrou de grande valor para uma vasta gama de projetos.
 
-Durante todo o desenvolvimento do projeto, foi utilizada a ferramenta Git para o controle de versão do código fonte. Para o compartilhamento do código e diferentes versões entre a dupla, foi usado o \textit{GitHub}\footnote{\url{https://github.com/}} como repositório remoto. A plataforma é de uso livre e funciona no formato \textit{Web}, facilitando o uso do Git, assim como acrescentando funcionalidades de organização de projetos que ajudam muito nos processos de desenvolvimento.
+Durante todo o desenvolvimento do projeto, foi utilizada a ferramenta Git para o controle de versão do código fonte. Para o compartilhamento do código e diferentes versões entre a dupla, foi usado o \textit{GitHub}\footnote{\url{https://github.com/}} como repositório remoto. A plataforma é de uso livre e funciona no formato \textit{Web}, facilitando o uso do Git, assim como acrescentando funcionalidades de organização de projetos que ajudam muito nos processos de desenvolvimento. Foram criados quatro repositórios no total para o projeto no GitHub:
+
+\begin{enumerate}
+    \item Front Office\footnote{\url{https://github.com/KesleyK/monografia-app}};
+    \item Back Office\footnote{\url{https://github.com/KesleyK/monografia-backoffice/tree/master}};
+    \item Monografia\footnote{\url{https://github.com/Pedenite/Monografia}};
+    \item Auxiliar\footnote{\url{https://github.com/Pedenite/monografia-pages}}.
+\end{enumerate}
 
 Adicionalmente, para aprimorar o uso efetivo do Git, foi utilizado um fluxo de criação de \textit{branches} intitulado \textit{Git Flow}, que consiste de regras de nomenclatura e de hierarquia para as ramificações criadas em um projeto. Na \refFig{gitflow} é possível visualizar as nomenclaturas das \textit{branches}, assim como de onde são feitos os \textit{checkouts} e \textit{merges} para cada uma.
 
