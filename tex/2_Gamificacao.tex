@@ -29,6 +29,7 @@ Com os avanços tecnológicos dos útimos tempos, diversos setores da sociedade 
 A tecnologia da comunicação tem o poder de dinamizar a sala de aula, saindo de um ambiente monótono, no qual um fala e todos escutam, para um ambiente acolhedor, dinâmico com possibilidades de discussões e debates. Os novos tempos exigem um padrão educacional que esteja voltado para o desenvolvimento de um conjunto de competências e de habilidades essenciais, a fim de que os alunos possam compreender e refletir sobre a realidade, participando e agindo no contexto de uma sociedade comprometida com o futuro (SANTOS, 2010) \cite{tecnologia-professores}.
 
 \subsection{Elementos de \textit{Design} de Jogos que podem ser aplicados na Gamificação}
+\label{gamification_elements}
 
 Diversos autores apresentam vários aspectos diferentes para o \textit{design} completo de um jogo, porém uma seleção dos principais itens apresentados recorrentemente pelos autores são: pontuação, distintivos, \textit{ranking}, gráficos de performance, histórias significativas, avatares e colegas \cite{gamification_motivates}. A seguir, cada um dos itens serão descritos detalhadamente.
 
@@ -52,4 +53,14 @@ Com isso em mente, o \appName\ foi desenvolvido, utilizando dos conceitos de gam
 
 \section{Gamificação no \appName}
 
-TODO
+A maioria dos elementos de gamificação presentes na compilação apresentada na Seção \ref{gamification_elements} foram aplicados de alguma forma no aplicativo \appName. Porém, por se tratar de uma plataforma onde um professor pode criar um curso, alguns dos fatores para uma aplicação mais efetiva da gamificação dependem do conhecimento do professor sobre o tema e como ele irá aplicar o uso de conceitos de jogos nos exercícios propostos. A seguir, está descrito como foi aplicado cada um dos aspectos existentes no aplicativo sobre o que se refere à gamificação.
+
+\begin{itemize}
+    \item A \textbf{Pontuação} é individual para cada aluno e é diferente para cada time ou curso cadastrado na plataforma. Deste modo, o sistema de ranqueamento de cada time não será interferido por outros, garantindo uma plataforma individual para cada um. O usuário ganha pontos ao resolver corretamente os desafios propostos.
+    \item O \textbf{\textit{Ranking}} foi implementado individualmente para cada curso ou time cadastrado na plataforma conforme mencionado anteriormente. A classificação é gerada unicamente com base na quantidade de pontos obtidos por cada aluno. A quantidade de pontos obtidas em cada desafio é definida pelo professor, porém é limitada a um \textit{range} para não gerar diferenças muito grandes de pontuação em cada desafio.
+    \item A \textbf{Performance} dos alunos pode ser visualizada pelos professores para localizar possíveis dificuldades generalizadas ou individuais. O aluno também pode visualizar a sua performance ao finalizar os desafios de um tópico, podendo acessar um \textit{feedback} individual para cada questão ou as estatísticas gerais dos desafios realizados como a porcentagem de acerto e erro e a pontuação total obtida. Ao visualizar os seus erros e acertos, o estudante pode identificar as suas próprias dificuldades, o que permite o auto-aperfeiçoamento ao estudar mais o que lhe falta, assim como pode também recorrer à ajuda dos outros para um crescimento mútuo.
+    \item \textbf{Histórias Significativas} não foram implementadas diretamente no aplicativo pois se trata de algo individual para cada contexto e, portanto, seria dever do professor, que pode opcionalmente incluir esse tipo de \textit{background} no seu curso para despertar o interesse e engajamento dos alunos.
+    \item Os \textbf{Colegas} de um determinado curso aparecem no \textit{ranking} da plataforma, permitindo que os alunos se comuniquem entre si por meio da ferramenta de conversa por mensagens implementada para solicitar ajuda ou interagir da forma que bem entenderem.
+\end{itemize}
+
+O capítulo seguinte discute aspectos mais técnicos sobre o desenvolvimento e o funcionamento do aplicativo \appName.
