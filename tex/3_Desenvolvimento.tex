@@ -1,4 +1,4 @@
-O desenvolvimento do aplicativo móvel \appName\ foi feito utilizando diversas tecnologias e ferramentas, assim como metodologias. A seguir neste capítulo, serão descritas cada uma das etapas do processo de criação do \textit{app}.
+O desenvolvimento do aplicativo móvel e da plataforma Web \appName\ foi feito utilizando diversas tecnologias e ferramentas, assim como metodologias. A seguir neste capítulo, serão descritas cada uma das etapas do processo de criação do \textit{app}.
 
 \section{Processo}
 
@@ -26,7 +26,7 @@ Scrum é um \textit{framework} que ajuda as pessoas, times e organizações a ge
 
 A aplicação do Scrum no \appName\ foi feita de forma parcial. Foram usadas Sprints para as diversas fases do projeto, incluindo a revisão das tarefas concluídas e o planejamento das próximas tarefas, onde as tarefas do \textit{backlog} são selecionadas para entrar no escopo da Sprint conforme necessidade. É comum no Scrum a ocorrência de reuniões diárias para que a situação das tarefas sejam compartilhadas entre a equipe e os impedimentos sejam expostos para que seja buscada uma solução, porém, por se tratar de uma equipe de apenas duas pessoas e sem a presença de um Scrum Master, a frequência das reuniões foi diminuida, ocorrendo, no mínimo uma vez por semana.
 
-O \textit{framework} Scrum não tem uma lista de artefatos de documentação obrigatórios a se produzir, pois se trata de uma metodologia ágil, caracterizada pelo contato pessoal e o funcoinamento do produto acima de uma documentação expressiva. Porém, as documentações não são proibidas, e devem ser produzidas conforme a necessidade da equipe e do cliente, servindo como critérios de aceite ou como referência interna para auxiliar no desenvolvimento ou manutenções futuras. Para o projeto, foram desenvolvidos poucos artefatos conforme a necessidade surgia.
+O \textit{framework} Scrum não tem uma lista de artefatos de documentação obrigatórios a se produzir, pois se trata de uma metodologia ágil, caracterizada pelo contato pessoal e o funcionamento do produto acima de uma documentação expressiva. Porém, as documentações não são proibidas, e devem ser produzidas conforme a necessidade da equipe e do cliente, servindo como critérios de aceite ou como referência interna para auxiliar no desenvolvimento ou manutenções futuras. Para o projeto, foram desenvolvidos poucos artefatos conforme a necessidade surgia.
 
 Diversos recursos e programas foram utilizados para auxiliar nos processos de desenvolvimento do \appName\, sendo todos de licença livre ou de uso gratuito. Antes de iniciar o desenvolvimento do \textit{software}, foram criados protótipos de telas do projeto, a fim de facilitar a criação das telas funcionais posteriormente. Durante esta etapa, o estilo do aplicativo foi definido, incluindo as cores predominantes, diferentes telas pertencentes à interface de usuário, rotas de navegação e as funções acessíveis por cada uma das telas projetadas. Tudo isso conferiu uma identidade ao projeto de \textit{software}. A seguir, estão descritos os demais artefatos produzidos durante o desenvolvimento do \appName:
 
@@ -170,6 +170,12 @@ A sintaxe do React utiliza a extensão de sintaxe do Javascript chamada JSX, que
 React Native\footnote{\url{https://reactnative.dev}} compartilha dos mesmos princípios, funcionalidades e sintaxe do React para o desenvolvimento de aplicativos nativos. Os componentes presentes no código escrito em react native são transformados em elementos de interfaces de usuário utilizando a API da própria plataforma onde será executado. O \textit{framework} facilita o desenvolvimento para plataformas móveis de forma a utilizar o mesmo código tanto no Android como no iOS, não exigindo muito retrabalho ao criar suporte a outras plataformas para o aplicativo. Assim como React, o React Native é uma biblioteca \textit{open-source} mantida pela Meta \cite{react-native}.
 
 A escolha das ferramentas para o projeto \appName foi devido à familiaridade com a mesma por parte da dupla, não exigindo um treinamento extensivo para seu uso no projeto. A aplicação móvel, chamada de \textit{front-office} foi desenvolvida usando React Native, enquanto a versão \textit{Web}, \textit{back-office}, foi desenvolvida utilizando React.
+
+\subsection{Expo}
+
+Expo\footnote{\url{https://expo.dev/}} é uma plataforma \textit{open-source} para a criação de aplicativos nativos para Android, iOS e Web com Javascript e React \cite{expo}. A plataforma foi usada na versão \textit{mobile} do \appName\ para facilitar o uso de tecnologias nativas do Android, mas também facilitaria para o iOS, porém este não foi testado e, portanto não existe garantias de funcionamento.
+
+Com o uso do Expo, foi também instalado um aplicativo chamado \textit{Expo Go}\footnote{\url{https://play.google.com/store/apps/details?id=host.exp.exponent}} para facilitar o teste durante o desenvolvimento. O aplicativo em questão permite a execução de aplicativos que utilizam a plataforma expo sem a necessidade de instalá-los no dispositivo, bastando acessar um link disponibilidado pela ferramenta ou ler um QR Code com a câmera do dispositivo, permitindo também a distribuição do \textit{app} por este meio. O aplicativo do \appName\ foi disponibilizado para execução por meio do aplicativo Expo Go por um link gerado pela ferramenta\footnote{\url{https://expo.dev/@pedenite/algoritmia?serviceType=classic&distribution=expo-go}}, permitindo a distribuição para testes.
 
 \subsection{Jest}
 
