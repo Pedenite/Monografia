@@ -121,11 +121,19 @@ A tela \textit{Home} é a primeira tela acessada pelo usuário após o \textit{l
 
 %%% TODO: alterar a tela (Kesley)
 
-Pela \refFig{backoffice_home}, é possível visualizar que, além do conteúdo da tela \textit{Home}, a aplicação também conta com uma barra de navegação lateral e uma barra superior com uma mensagem que indica a tela atual que o usuário se encontra e um botão para realizar o \textit{logout} ao final dela. Estes recursos são reutilizados em todas as telas, permitindo uma navegação de acesso mais fácil na aplicação \textit{Web}.
+Pela \refFig{backoffice_home}, é possível visualizar que, além do conteúdo da tela \textit{Home}, a aplicação também conta com uma barra de navegação lateral e uma barra superior com uma mensagem que indica a tela atual que o usuário se encontra e um botão para realizar o \textit{logout} ao final dela. Estes recursos são reutilizados em todas as telas, permitindo uma navegação de acesso mais fácil na aplicação \textit{Web} para chegar à \textit{Home}, tela de gerenciamento de times e à tela de gerenciamento de perfil.
+
+\subsection{Perfil}
+
+A tela de Perfil, acessada pela barra de navegação agrega os dados de usuário, permitindo a edição tanto dos dados quando da senha. Apenas o \textit{e-mail} não pode ser editado, pois é o principal identificador de um usuário, conforme descrito nas políticas de privacidade da plataforma, onde é informado que alterar o \textit{e-mail} ou apagar uma conta só é possível mediante o contato direto com um administrador da plataforma.
+
+\figura[H]{../img/backoffice/perfil.png}{Tela de gerenciamento de Perfil - Backoffice}{backoffice_profile}{width=\textwidth}
+
+Na \refFig{backoffice_profile}, é possível visualizar dois formulários, sendo um para alterar o nome completo e a instituição de ensino do usuário e o outro para alterar a senha. Para realizar a alteração de senha, é necessário validar a senha anteriormente cadastrada e digitar a nova senha duas vezes, trazendo uma conformidade à LGPD \cite{lgpd}.
 
 \subsection{Times}
 
-Pela tela de Times, o professor é capaz de visualizar os seus times, assim como cadastrar novos. Para cada um dos times cadastrados, é possível acessar a tela específica dele para visualizar mais informações sobre ele.
+A tela de Times pode ser acessada pela barra de navegação lateral, e é onde o professor é capaz de visualizar os seus times, assim como cadastrar novos. Para cada um dos times cadastrados, é possível acessar a tela específica dele para visualizar mais informações sobre ele.
 
 \figura[H]{../img/backoffice/times.png}{Tela de Times - Backoffice}{backoffice_times}{width=\textwidth}
 
