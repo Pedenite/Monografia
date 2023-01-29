@@ -1,6 +1,6 @@
 %%% TODO: Explicitar a gamificação em cada parte (retomar cap 2)
 
-Neste capítulo, será descrito o aplicativo móvel \appName, assim como todas as suas funcionalidades, telas e aplicabilidade.
+Neste capítulo, será descrito o aplicativo móvel e a aplicação \textit{Web} \appName, assim como todas as suas funcionalidades, telas e aplicabilidade.
 
 O aplicativo móvel foi desenvolvido com o intuito de ensinar computação para qualquer pessoa interessada de forma mais descontraída e gamificada. O projeto foi disponibilizado no GitHub com a licença do MIT \cite{mit-license}, que é uma licença simples e curta com a única condição sendo de preservação do \textit{copyright} e notas da licença. A licença em si é \textit{open-source} e garante a qualquer pessoa, o uso comercial, distribuição, modificação e uso privado do projeto, porém, não provê garantia de forma alguma.
 
@@ -98,7 +98,7 @@ Versão \textit{Web} do \appName, possui as seguintes características:
     \item \textbf{Objetivo geral}: Cadastrar e gerenciar equipes, alunos, desafios e cursos na plataforma \appName .
 \end{itemize}
 
-A seguir, estão listadas as diferentes telas e funcionalidades do \textit{Back Office} do \appName .
+A seguir, estão listadas as diferentes telas e funcionalidades do \textit{Back Office} do \appName.
 
 \subsection{Login e Registro}
 Ao acessar a aplicação \textit{Web}, o usuário se depará com a tela de \textit{Login}, componente fundamental para certificar que o usuário é um membro válido da plataforma.
@@ -113,7 +113,7 @@ Abaixo do botão de \textit{Login}, encontra-se o botão que direciona o usuári
 
 Na tela de Registro, o usuário encontrará o formulário para cadastro de conta, necessitando preencher os dados: nome completo, \textit{e-mail}, instituição de ensino, senha e confirmação de senha. Caso o usuário deseje prosseguir com o cadastro, deverá aceitar as políticas de privacidade, que podem ser acessadas pelo link presente na \textit{checkbox} da parte inferior do formulário. Esta medida serve para deixar o software em conformidade com a Lei Geral da Proteção de Dados (LGPD) \cite{lgpd}. O modelo utilizado para a criação da política de privacidade foi disponibilizado gratuitamente na plataforma Jusbrasil pelo usuário Pensador Jurídico\footnote{\url{https://pensadorjuridico.jusbrasil.com.br/}} \cite{politica-privacidade}
 
-Após clicar no botão de Cadastro, os dados informados pelo usuário serão validados. Caso os dados apresentados estejam inválidos, será exibido um alerta de erro. Caso contrário, o usuário será redirecionado para a tela de \textit{Login}, podendo acessar a aplicação por meio dos dados recém-cadastrados.
+Após clicar no botão de Cadastro, os dados informados pelo usuário serão validados. Caso os dados apresentados estejam inválidos, será exibido um alerta de erro. Caso contrário, o usuário será redirecionado para a tela de \textit{Login}, podendo acessar a aplicação utilizando os dados recém-cadastrados.
 
 \subsection{\textit{Home} e Navegação}
 
@@ -121,8 +121,62 @@ A tela \textit{Home} é a primeira tela acessada pelo usuário após o \textit{l
 
 \figura[H]{../img/backoffice/home.png}{Tela \textit{Home} - Backoffice}{backoffice_home}{width=\textwidth}
 
+%%% TODO: alterar a tela (Kesley)
+
 Pela \refFig{backoffice_home}, é possível visualizar que, além do conteúdo da tela \textit{Home}, a aplicação também conta com uma barra de navegação lateral e uma barra superior com uma mensagem que indica a tela atual que o usuário se encontra e um botão para realizar o \textit{logout} ao final dela. Estes recursos são reutilizados em todas as telas, permitindo uma navegação de acesso mais fácil na aplicação \textit{Web}.
 
 \subsection{Times}
 
+Pela tela de Times, o professor é capaz de visualizar os seus times, assim como cadastrar novos. Para cada um dos times cadastrados, é possível acessar a tela específica dele para visualizar mais informações sobre ele.
 
+\figura[H]{../img/backoffice/times.png}{Tela de Times - Backoffice}{backoffice_times}{width=\textwidth}
+
+Na \refFig{backoffice_times}, apenas o conteúdo da tela específica foi incluído, porém a barra de navegação lateral continua presente. É possível visualizar que o usuário está cadastrando um novo time chamado "Turma de APC 2023/1", bastando pressionar o botão de adicionar para realizar esta inclusão.
+
+\figura[H]{../img/backoffice/time_cadastrado.png}{Tela de Times - Backoffice - Novo time cadastrado}{backoffice_time_cadastrado}{width=\textwidth}
+
+Ao cadastrar um time, o usuário vai visualizar uma mensagem que serve como \textit{feedback} e vai ver o time cadastrado na tabela abaixo dos campos do formulário, como mostrado na \refFig{backoffice_time_cadastrado}. Ao pressionar a lupa em um dos times listados, o usuário é redirecionado à tela deste time.
+
+\subsection{Participantes e Tópicos}
+
+Aqui o professor poderá incluir participantes e tópicos para o seu time por meio de um formuário presente em cada uma das duas abas mostradas na \refFig{backoffice_participantes} e na \refFig{backoffice_topicos} 
+
+\figura[H]{../img/backoffice/time_participantes.png}{Tela do Time selecionado - Backoffice - Participantes}{backoffice_participantes}{width=\textwidth}
+
+No cadastro de participantes, o professor deverá digitar o e-mail de um usuário existente na plataforma. Na tabela que lista os participantes, o professor pode desativar um usuário que adicionou anteriormente pelo ícone de lata de lixo à direita.
+
+\figura[H]{../img/backoffice/time_topicos.png}{Tela do Time selecionado - Backoffice - Tópicos}{backoffice_topicos}{width=\textwidth}
+
+No cadastro de tópico, o professor deverá informar um nome, um ícone, seguindo o padrão disponibilizado e definir se o curso terá uma trilha de aprendizado ou não. A trilha de aprendizado ativada exige que o aluno realize os exercícios disponibilizados em uma ordem definida pelo professor. Caso não esteja ativada, o aluno é livre para realizar os desafios propostos na ordem que preferir. Com o tópico cadastrado, o ícone de lupa permite a navegação para a tela de gerenciamento deste tópico.
+
+As telas presentes em cada uma das duas abas funcionam da mesma forma que o fórmulário de adicionar times. Ao realizar o cadastro, o novo item vai aparecer na tabela presente no final da página.
+
+\subsection{Subtópicos}
+
+Ao selecionar um tópico cadastrado, o professor poderá explorar o conteúdo deste tópico, que são cadastrados como subtópicos. Da mesma forma que os formulários anteriores, o professor poderá cadastrar um novo subtópico incluindo um nome e uma descrição.
+
+\figura[H]{../img/backoffice/subtopicos.png}{Tela do Tópico selecionado - Backoffice - Subtópicos}{backoffice_subtopicos}{width=\textwidth}
+
+A \refFig{backoffice_subtopicos} mostra a organização do formulário e a tabela abaixo com os subtópicos existentes. No momento do cadastro, o professor poderá opcionalmente, iniciar uma história na descrição do subtópico, que irá aparecer para o aluno, de forma a deixar a experiência de aprendizado mais expressiva \cite{gamification_motivates}.
+
+\subsection{Desafios}
+
+Os desafios são cadastrados dentro de um subtópico, sendo o principal pilar da gamificação do \appName. Para realizar o cadastro de um desafio, o professor deverá preencher diversos campos que estão listados a seguir.
+
+\begin{itemize}
+    \item \textbf{Nome}: Um identificador para o desafio;
+    \item \textbf{Pontos}: A quantidade de pontos que o estudante vai obter ao acertar o desafio;
+    \item \textbf{Descrição}: Serve como o corpo do desafio, sendo o elemento mais importante para o correto entendimento por parte do estudante do que o desafio pede. O campo foi configurado para permitir a sintaxe do \textit{Markdown} \cite{markdown}, porém com botões de formatação para facilitar a escrita para usuário que não possuam conhecimento da linguagem. Caso o professor esteja elaborando uma história para o seu curso para uma melhor aplicação da gamificação \cite{gamification_motivates}, é neste campo que ele deverá continuar a história que foi escrita nos desafios anteriores e descrições do subtópico.
+    \item \textbf{Modelo da Resposta}: Define se o usuário deverá digitar a sua resposta, se deverá marcar uma opção de múltipla escolha ou se poderá de marcar mais de uma opção para chegar à resposta correta.
+    \item \textbf{\textit{Feedback}}: Campo opcional, que serve como uma justificativa da resposta correta para um melhor entendimento do aluno.
+\end{itemize}
+
+\figura[H]{../img/backoffice/desafios.png}{Tela do Subtópico selecionado - Backoffice - Desafios}{backoffice_desafios}{width=\textwidth}
+
+Assim como nas telas anteriores, abaixo do formulário, se encontra uma tabela com os desafios já cadastrados. Ao \textit{clicar} na lupa à direita, o professor será capaz de visualizar um relatório geral sobre o desafio, visualizando os estudantes que acertaram e os que erraram este desafio em específico, assim sendo capaz de observar em quais assuntos os alunos demonstram maior dificuldade, logo tendo os dados para realizar uma possível melhoria no seu curso e estando e concordância com a gamificação \cite{gamification_motivates} por meio do Relatório.
+
+\figura[H]{../img/backoffice/relatorio_desafio.png}{Tela do Desafio selecionado - Backoffice}{backoffice_relatorio_desafios}{width=\textwidth}
+
+Com todas estas telas, o professor tem acesso a todas as ferramentas do \appName\ para realizar a criação do seu curso de forma gamificada, porém alguns pontos devem ser observados pelo próprio professor como a história, cabendo à sua decisão de implementar ou não. A pontuação atribuída a cada desafio deve ser observada com cuidado também para não deixar uma diferença muito grande de pontos entre um desafio e outro. 
+
+Por meio da visualização do \textit{Ranking}, o professor também pode incluir prêmios para os alunos que se destacaram de forma a aumentar a motivação dos estudantes \cite{gamification_motivates}, mas ao mesmo tempo, não deve excluir os usuários que estão no fundo da classificação para não gerar uma desmotivação destes. A ideia seria procurar ajuda-los e incentivar que os alunos se comuniquem entre si para promover a ajuda coletiva e a interação, melhorando o engajamento de forma geral.
