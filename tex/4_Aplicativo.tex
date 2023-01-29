@@ -105,14 +105,24 @@ Ao acessar a aplicação \textit{Web}, o usuário se depará com a tela de \text
 
 \figura[H]{../img/backoffice/login.png}{Tela de Login - Backoffice}{backoffice_login}{width=\textwidth}
 
-Na tela de \textit{Login}, o usuário informará o seu \textit{E-mail} e Senha para que sejam feitas as validações necessárias dos seus dados. Caso os dados informados sejam válidos, o usuário será direcionado à tela Home da aplicação, conforme a figura X. Se as informações inseridas não condizem com os dados cadastrados na base de dados, será exibido um alerta de erro. 
+Na tela de \textit{Login}, o usuário informará o seu \textit{E-mail} e Senha para que sejam feitas as validações necessárias dos seus dados. Caso os dados informados sejam válidos, o usuário será direcionado à tela Home da aplicação, conforme a \refFig{backoffice_home}. Se as informações inseridas não condizem com os dados cadastrados na base de dados, será exibido um alerta de erro. 
 
 Abaixo do botão de \textit{Login}, encontra-se o botão que direciona o usuário à tela de registro, conforme a figura \refFig{backoffice_register}.
 
-\figura[H]{../img/backoffice/register.png}{Tela de Cadstro - Backoffice}{backoffice_register}{width=\textwidth}
+\figura[H]{../img/backoffice/registro.png}{Tela de Cadastro - Backoffice}{backoffice_register}{width=\textwidth}
 
 Na tela de Registro, o usuário encontrará o formulário para cadastro de conta, necessitando preencher os dados: nome completo, \textit{e-mail}, instituição de ensino, senha e confirmação de senha. Caso o usuário deseje prosseguir com o cadastro, deverá aceitar as políticas de privacidade, que podem ser acessadas pelo link presente na \textit{checkbox} da parte inferior do formulário. Esta medida serve para deixar o software em conformidade com a Lei Geral da Proteção de Dados (LGPD) \cite{lgpd}. O modelo utilizado para a criação da política de privacidade foi disponibilizado gratuitamente na plataforma Jusbrasil pelo usuário Pensador Jurídico\footnote{\url{https://pensadorjuridico.jusbrasil.com.br/}} \cite{politica-privacidade}
 
 Após clicar no botão de Cadastro, os dados informados pelo usuário serão validados. Caso os dados apresentados estejam inválidos, será exibido um alerta de erro. Caso contrário, o usuário será redirecionado para a tela de \textit{Login}, podendo acessar a aplicação por meio dos dados recém-cadastrados.
 
-\subsection{Home e Navegação}
+\subsection{\textit{Home} e Navegação}
+
+A tela \textit{Home} é a primeira tela acessada pelo usuário após o \textit{login}, contendo uma visão geral sobre os times cadastrados pelo professor. A tela também possui relatórios contendo o desempenho dos alunos e o \textit{ranking} de cada time.
+
+\figura[H]{../img/backoffice/home.png}{Tela \textit{Home} - Backoffice}{backoffice_home}{width=\textwidth}
+
+Pela \refFig{backoffice_home}, é possível visualizar que, além do conteúdo da tela \textit{Home}, a aplicação também conta com uma barra de navegação lateral e uma barra superior com uma mensagem que indica a tela atual que o usuário se encontra e um botão para realizar o \textit{logout} ao final dela. Estes recursos são reutilizados em todas as telas, permitindo uma navegação de acesso mais fácil na aplicação \textit{Web}.
+
+\subsection{Times}
+
+
