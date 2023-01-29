@@ -3,11 +3,9 @@ O desenvolvimento do aplicativo móvel e da plataforma Web \appName\ foi feito u
 \section{Processo}
 
 %%% trocar para referências de processo de desenvolvimento
-O processo de \textit{software} é visto por uma sequência de atividades
-que produzem uma variedade de documentos, resultando em um programa
-satisfatório e executável \cite{processos_software}. Cada vez mais, os processos se mostram tão importantes quanto o \textit{software} em si, sendo indispensáveis para a produção de um produto de maior qualidade. O desenvolvimento da aplicação foi feito utilizando a metodologia ágil Scrum \cite{scrum_guide}.
+O processo de \textit{software} \cite{processos_software} é visto por uma sequência de atividades que produzem uma variedade de documentos, resultando em um programa satisfatório e executável. Cada vez mais, os processos se mostram tão importantes quanto o \textit{software} em si, sendo indispensáveis para a produção de um produto de maior qualidade. O desenvolvimento da aplicação foi feito utilizando a metodologia ágil Scrum \cite{scrum_guide}.
 
-O movimento ágil da indústria de \textit{software} se iniciou com a publicação do manifesto ágil\footnote{\url{https://agilemanifesto.org/}} em 2001 por um grupo de praticantes e consultores de \textit{software} \cite{agile_software_development}. O manifesto agrega os seguintes valores:
+O movimento ágil da indústria de \textit{software} \cite{agile_software_development} se iniciou com a publicação do manifesto ágil\footnote{\url{https://agilemanifesto.org/}} em 2001 por um grupo de praticantes e consultores de \textit{software} . O manifesto agrega os seguintes valores:
 
 \begin{itemize}
     \item \textbf{Indivíduos e Interações} acima de processos e ferramentas;
@@ -16,7 +14,7 @@ O movimento ágil da indústria de \textit{software} se iniciou com a publicaç�
     \item \textbf{Responder a mudanças} mais que seguir um plano;
 \end{itemize}
 
-Scrum é um \textit{framework} que ajuda as pessoas, times e organizações a gerar valor através de soluções adaptáveis para problemas complexos \cite{scrum_guide}. De forma resumida, o Scrum requer uma pessoa denominada \textit{Scrum Master} para controlar um ambiente caracterizado por:
+Scrum \cite{scrum_guide} é um \textit{framework} que ajuda as pessoas, times e organizações a gerar valor através de soluções adaptáveis para problemas complexos. De forma resumida, o Scrum requer uma pessoa denominada \textit{Scrum Master} para controlar um ambiente caracterizado por:
 
 \begin{enumerate}
     \item O dono do produto (\textit{Product Owner}): solicita o trabalho para um item complexo que é enviado para o \textit{Product Backlog};
@@ -25,7 +23,7 @@ Scrum é um \textit{framework} que ajuda as pessoas, times e organizações a ge
     \item Processo se repete com a nova \textit{Sprint}.
 \end{enumerate}
 
-O Scrum aplicado no \appName\ foi adaptado às necessidades do projeto. Foram usadas \textit{Sprints} para as diversas fases do projeto, incluindo a revisão das tarefas concluídas e o planejamento das próximas tarefas, onde as tarefas do \textit{backlog} são selecionadas para entrar no escopo da \textit{Sprint} conforme necessidade. É comum no Scrum a ocorrência de reuniões diárias para que a situação das tarefas sejam compartilhadas entre a equipe e os impedimentos sejam expostos para que seja buscada uma solução, porém, por se tratar de uma equipe de apenas duas pessoas e sem a presença de um \textit{Scrum Master}, a frequência das reuniões foi diminuida, ocorrendo, no mínimo uma vez por semana.
+O Scrum aplicado no \appName\ foi adaptado às necessidades do projeto. Foram usadas \textit{Sprints} para as diversas fases do projeto, incluindo a revisão das tarefas concluídas e o planejamento das próximas tarefas, onde as tarefas do \textit{backlog} são selecionadas para entrar no escopo da \textit{Sprint} conforme necessidade. É comum no Scrum, a ocorrência de reuniões diárias para que a situação das tarefas sejam compartilhadas entre a equipe e os impedimentos sejam expostos para que seja buscada uma solução, porém, por se tratar de uma equipe de apenas duas pessoas e sem a presença de um \textit{Scrum Master}, a frequência das reuniões foi diminuida, ocorrendo, no mínimo uma vez por semana.
 
 O \textit{framework} Scrum não tem uma lista de artefatos de documentação obrigatórios a se produzir, pois se trata de uma metodologia ágil, caracterizada pelo contato pessoal e o funcionamento do produto acima de uma documentação expressiva. Porém, as documentações não são proibidas, e devem ser produzidas conforme a necessidade da equipe e do cliente, servindo como critérios de aceite ou como referência interna para auxiliar no desenvolvimento ou manutenções futuras. Para o projeto, foram desenvolvidos artefatos conforme a necessidade surgia.
 
@@ -36,31 +34,13 @@ Antes de iniciar o desenvolvimento do \textit{software}, foram criados protótip
 \begin{itemize}
     \item Protótipos de telas (\ref{figma});
     \item Fluxo de utilização da aplicação (\ref{lucidChart});
-    \item Histórias de Usuário;
-    \item Diagrama de classes (\ref{creately}).
+    \item Histórias de Usuário (\ref{hus});
+    \item Diagrama de classes (\ref{plantuml}).
 \end{itemize}
 
-Com o protótipo inicial criado e aprovado, foi utilizado um \textit{software} de organização de tarefas para realizar o cadastro dos itens a serem implementados no aplicativo e foram criadas histórias de usuário para documentar os critérios de aceite e as funcionalidades a serem desenvolvidas. As histórias foram criadas conforme o exemplo a seguir:
+Com o protótipo inicial criado e aprovado, foi utilizado um \textit{software} de organização de tarefas chamado \textit{Notion} (\ref{notion}) para realizar o cadastro dos itens a serem implementados no aplicativo e foram criadas histórias de usuário para documentar os critérios de aceite e as funcionalidades a serem desenvolvidas. Com o início da primeira \textit{Sprint}, os primeiros \textit{cards} pendentes de resolução foram divididos entre a dupla e foi iniciado o desenvolvimento da plataforma em questão.
 
-\textbf{Como} usuário, 
-\textbf{eu quero} ser capaz de fazer login com as minhas credenciais no sistema, 
-\textbf{para} acessar as funcionalidades da plataforma.
-
-Critério de Aceitação 01:
-\begin{enumerate}
-    \item Usuário digita as suas credenciais corretamente e pressiona no botão de login;
-    \item Usuário acessa a ferramenta normalmente com a sua conta.
-\end{enumerate}
-
-Criério de Aceitação 02:
-\begin{enumerate}
-    \item Usuário digita as credenciais incorretas e pressiona o botão de login;
-    \item Acesso negado e mensagem de erro explicativa é mostrada na tela.
-\end{enumerate}
-
-As demais histórias de usuário podem ser acessadas por meio do repositório auxiliar\footnote{\url{https://pedenite.github.io/monografia-pages/user_stories.pdf}} criado para o projeto no GitHub (\ref{git}).
-
-Com o início da primeira Sprint, os primeiros cards pendentes de resolução foram divididos entre a dupla e foi iniciado o desenvolvimento do aplicativo em questão. A seguir, algumas das ferramentas utilizadas no processo de planejamento e desenvolvimento do \appName\ são descritas, assim como os artefatos produzidos em cada uma delas.
+A seguir, algumas das ferramentas utilizadas no processo de planejamento e desenvolvimento do \appName\ são descritas, assim como os artefatos produzidos em cada uma delas.
 
 \subsection{Figma}
 \label{figma}
@@ -97,34 +77,66 @@ Rota composta por 3 telas mostradas na \refFig{figma_account}, acessíveis pela 
 
 \figura[H]{../img/figma_account.png}{Protótipos de telas pertencentes às rotas de gerenciamento de conta}{figma_account}{width=0.75\textwidth}
 
+\subsection{Markdown}
+\label{hus}
+
+Markdown \cite{markdown} é uma linguagem de marcação de texto leve para a criação de textos formatados utilizando um simples editor de texto. As histórias de usuário da aplicação foram criadas utilizando a linguagem Markdown conforme o exemplo a seguir:
+
+\textbf{Como} usuário, 
+\textbf{eu quero} ser capaz de fazer login com as minhas credenciais no sistema, 
+\textbf{para} acessar as funcionalidades da plataforma.
+
+Critério de Aceitação 01:
+\begin{enumerate}
+    \item Usuário digita as suas credenciais corretamente e pressiona no botão de login;
+    \item Usuário acessa a ferramenta normalmente com a sua conta.
+\end{enumerate}
+
+Criério de Aceitação 02:
+\begin{enumerate}
+    \item Usuário digita as credenciais incorretas e pressiona o botão de login;
+    \item Acesso negado e mensagem de erro explicativa é mostrada na tela.
+\end{enumerate}
+
+As demais histórias de usuário podem ser acessadas por meio do repositório auxiliar\footnote{\url{https://pedenite.github.io/monografia-pages/user_stories.pdf}} criado para o projeto no GitHub (\ref{git}).
+
+Markdown também foi usado no aplicativo e aplicação \textit{Web} para a criação e exibição dos desafios, de forma a permitir ao professor uma maior versatilidade. Para deixar a aplicação mais acessível a professores que não têm conhecimentos sobre a linguagem, foi usado um editor mais visual no \textit{Back Office}, com as opções de formatação em botões e uma visualização do texto formatado ao lado.
+
 \subsection{\textit{Lucid Chart}}
 \label{lucidChart}
 
-O \textit{Lucid Chart}\footnote{\url{https://www.lucidchart.com/}} é uma ferramenta \textit{online} com plano gratuito para realizar o desenho de fluxos, podendo ser feito de forma colaborativa. Com as ferramentas disponibilizadas pela plataforma, foi criado o fluxograma da \refFig{fluxo_app}, que mostra as funcionalidades acessíveis pelo usuário final por cada tela. Também é mostrado o funcionamento básico dos desafios incluídos na plataforma, que fornecem uma pontuação ao usuário somente quando a pergunta é respondida corretamente.
+O \textit{Lucid Chart}\footnote{\url{https://www.lucidchart.com/}} é uma ferramenta \textit{online} com plano gratuito para realizar o desenho de fluxos, podendo ser feito de forma colaborativa. Com as ferramentas disponibilizadas pela plataforma, foi criado o fluxograma da \refFig{fluxo_app} para o aplicativo móvel, que mostra as funcionalidades acessíveis pelo usuário final por cada tela. Também é mostrado o funcionamento básico dos desafios incluídos na plataforma, que fornecem uma pontuação ao usuário somente quando a pergunta é respondida corretamente, não incrementando os pontos quando desafio é respondido incorretamente.
 
-\figura[H]{../img/fluxo_app.png}{Fluxo de utilização do \appName\ na visão do usuário}{fluxo_app}{width=\textwidth}
+\figura[H]{../img/fluxo_app.png}{Fluxo de utilização do aplicativo móvel \appName\ na visão do usuário}{fluxo_app}{width=\textwidth}
 
-Pela \refFig{fluxo_app}, é possível visualizar o início e o fim do fluxo de usabilidade do aplicativo em cor vermelha, sendo o início, o \textit{login} e o fim, o \textit{logout}. As telas foram represantadas por retângulos de cor azul e as condições por losangos de cor azul claro. Por fim, funcionalidades específicas, como a forma de incremento de ponto do desafio é representada pelo pentágono irregular de cor amarelada.
+Também foi desenvolvido um fluxograma para a aplicação \textit{Web} conforme mostrado na \refFig{fluxo_web}
 
-\subsection{Creately}
-\label{creately}
+\figura[H]{../img/fluxo_web.png}{Fluxo de utilização da aplicação \textit{Web} \appName\ na visão do usuário}{fluxo_web}{width=\textwidth}
 
-Creately \footnote{\url{https://creately.com/}} é uma área de trabalho visual que permite conectar dados. Tem diversos usos, incluindo a possibilidade de criar diagramas UML, modelos entidade relacionamento, entre outros. A ferramenta foi usada para gerar o diagrama de classes da aplicação conforme \refFig{class_diagram}.
+Pela \refFig{fluxo_app} e \refFig{fluxo_web}, é possível visualizar o início e o fim do fluxo de usabilidade do \textit{Front Office} e \textit{Back Office} em cor vermelha, sendo o início, o \textit{login} e o fim, o \textit{logout}. As telas foram represantadas por retângulos de cor azul e as condições por losangos de cor azul claro. Por fim, funcionalidades específicas são representadas pelo item de cor amarelada.
+
+\subsection{PlantUML}
+\label{plantuml}
+
+\textit{Unified Modeling Language} (UML) \cite{uml} é uma linguagem de modelagem usada no campo de engenharia de \textit{software} que visa criar uma maneira padrão de visualizar o \textit{design} de um sistema. Dentre os tipos de diagramas que fazem parte do UML, estão o diagrama de classe, de objeto, de sequência, de caso de uso, de atividade, entre muitos outros. Para o contexto do projeto, foi gerado o diagrama de classes seguindo o UML.
+
+PlantUML \footnote{\url{https://plantuml.com/}} é uma ferramenta que permite escrever diagramas UML por meio de uma sintaxe textual. Ele também suporta outros diversos diagramas que não fazem parte do UML. A ferramenta foi usada para gerar o diagrama de classes da aplicação conforme \refFig{class_diagram}.
 
 \figura[H]{../img/class_diagram.png}{Diagrama de classes do \appName}{class_diagram}{width=\textwidth}
 
 Pelo diagrama de classes, é possível visualizar as classes utilzadas no projeto, tanto na versão Front-office quanto Back-office, que refletem diretamente na modelagem do banco de dados não-relacional utilizado. Devido à categoria de banco de dados utilizada (\ref{firebase}), não foram gerados documentos adicionais para uma descrição mais visual da base.
 
 \subsection{Notion}
+\label{notion}
 
-O software \textit{Notion}\footnote{\url{https://www.notion.so/}} é uma plataforma de produtividade utilizada principalmente para organizar trabalhos em equipe. A ferramenta dispõe de diversos recursos relacionados a metodologias ágeis, documentação, métricas, entre outros, porém para o \appName, foi utilizado apenas o quadro kanban para a divisão e organização das tarefas do projeto, assim como para acompanhar as etapas do processo do Scrum.
+O software \textit{Notion}\footnote{\url{https://www.notion.so/}} é uma plataforma de produtividade utilizada principalmente para organizar trabalhos em equipe. A ferramenta dispõe de diversos recursos relacionados a metodologias ágeis, documentação, métricas, entre outros, porém para o \appName, foi utilizado o quadro kanban para a divisão e organização das tarefas do projeto, assim como para acompanhar as etapas do processo do Scrum.
 
 \subsection{Git e Git Flow}
 \label{git}
 
-Git\footnote{\url{https://git-scm.com/}} é uma ferrameta ce controle de versão particularmente poderosa e flexível que torna o devenvolvimento colaborativo mais eficiente \cite{git}. A ferramenta foi inventada por Linus Torvalds para suportar o desenvolvimento do \textit{kernel} do Linux, mas se mostrou de grande valor para uma vasta gama de projetos.
+Git\footnote{\url{https://git-scm.com/}} \cite{git} é uma ferrameta ce controle de versão particularmente poderosa e flexível que torna o devenvolvimento colaborativo mais eficiente. A ferramenta foi inventada por Linus Torvalds para suportar o desenvolvimento do \textit{kernel} do Linux, mas se mostrou de grande valor para uma vasta gama de projetos.
 
-Durante todo o desenvolvimento do projeto, foi utilizada a ferramenta Git para o controle de versão do código fonte. Para o compartilhamento do código e diferentes versões entre a dupla, foi usado o \textit{GitHub}\footnote{\url{https://github.com/}} como repositório remoto. A plataforma é de uso livre e funciona no formato \textit{Web}, facilitando o uso do Git, assim como acrescentando funcionalidades de organização de projetos que ajudam muito nos processos de desenvolvimento. Foram criados quatro repositórios no total para o projeto no GitHub:
+Durante todo o desenvolvimento do projeto, foi utilizada a ferramenta Git para o controle de versão do código fonte. Para o compartilhamento do código e diferentes versões entre a dupla, foi usado o \textit{GitHub}\footnote{\url{https://github.com/}} como repositório remoto. A plataforma é de uso livre e funciona no formato \textit{Web}, facilitando o uso do Git, assim como acrescentando funcionalidades de organização de projetos que ajudam muito nos processos de desenvolvimento. Foram criados quatro repositórios no total para o projeto no GitHub de forma a promover uma melhor separação de cada plataforma e permitir até permitir o reuso de recursos com o repositório auxiliar.
 
 \begin{enumerate}
     \item Front Office\footnote{\url{https://github.com/KesleyK/monografia-app}};
@@ -133,9 +145,19 @@ Durante todo o desenvolvimento do projeto, foi utilizada a ferramenta Git para o
     \item Auxiliar\footnote{\url{https://github.com/Pedenite/monografia-pages}}.
 \end{enumerate}
 
-Adicionalmente, para aprimorar o uso efetivo do Git, foi utilizado um fluxo de criação de \textit{branches} intitulado \textit{Git Flow}, que consiste de regras de nomenclatura e de hierarquia para as ramificações criadas em um projeto. Na \refFig{gitflow} é possível visualizar as nomenclaturas das \textit{branches}, assim como de onde são feitos os \textit{checkouts} e \textit{merges} para cada uma.
+O primeiro repositório listado é o que armazena todo o código-fonte do aplicativo móvel, assim como o segundo, que armazena o código da aplicação \textit{Web}. O terceiro item, intitulado Monografia contém todos os arquivos para gerar esta monografia e o último foi usado para incluir artefatos adicionais do projeto como páginas \textit{Web} que incluem a política de privacidade, PDFs com as histórias de usuário, entre outros. O repositório auxiliar utiliza de uma funcionalidade do GitHub chamada \textit{GitHub Pages} \cite{github-pages}, que permite a publicação de páginas \textit{Web} diretamente do repositório. Isso permitiu que as políticas de privacidade do aplicativo fossem publicados como um \textit{site}\footnote{\url{https://pedenite.github.io/monografia-pages/}}, assim como os outros artefatos incluídos.
 
-\figuraBib[H]{../img/gitflow.png}{Exemplo visual do Git Flow}{gitflow_atlassian}{gitflow}{width=.75\textwidth}
+Adicionalmente, para aprimorar o uso efetivo do Git, foi utilizado um fluxo de criação de \textit{branches} intitulado \textit{Git Flow}, que consiste de regras de nomenclatura e de hierarquia para as ramificações criadas em um projeto. Na \refFig{gitflow} é possível visualizar as nomenclaturas das \textit{branches} utilizadas no projeto \appName, assim como de onde são feitos os \textit{checkouts} e \textit{merges} para cada uma.
+
+\figura[H]{../img/gitflow.png}{Exemplo visual do Git Flow}{gitflow}{width=\textwidth}
+
+\begin{itemize}
+    \item \textit{Master}: é a principal e não deve ter commits feitos diretamente nela, sendo usada para as \textit{releases} do projeto. 
+    \item \textit{Hotfix}: é usada quando são descobertos erros na \textit{Master}, para corrigir o mais rápido possível.
+    \item \textit{Develop}: vai acompanhar a \textit{Master}, inclusive sendo gerada a partir dela no início do projeto, e a partir dela que são geradas as \textit{branches} de \textit{Feature} e \textit{Bugfix}, caso necessário.
+    \item \textit{Bugfix}: usadas para corrigir problemas encontrados na \textit{branch Develop} antes de realizar o \textit{merge} com a \textit{Master}, que pode representar um ambiente de produção, assim evitando problemas bem mais catastróficos.
+    \item \textit{Feature}: representam os recursos incrementais do projeto como novas funcionalidades ou melhorias. Foi o tipo de \textit{branch} mais usado no projeto, sendo criada uma \textit{branch} para cada \textit{card} que não represente um defeito no Notion.
+\end{itemize}
 
 O uso do gitflow permitiu uma organização melhor do projeto para a realização do desenvolvimento de diversas funcionalidades simultaneamente sem interferência de uma nas outras. Com o uso dos \textit{Pull requests} do Github, foi possível aprimorar ainda mais o processo de \textit{merge} com a \textit{branch Develop} após o desenvolvimento de funcionalidades incluindo o \textit{Code Review} para a aprovação do item, permitindo uma melhor integração da dupla e conhecimento sobre o \textit{status} do projeto.
 
@@ -159,9 +181,9 @@ Todo o código do aplicativo \appName\ foi testado no sistema Android, porém, d
 
 \subsection{Typescript}
 
-Typescript\footnote{\url{https://www.typescriptlang.org/}} é uma linguagem de programação \textit{open-source} fortemente tipada que foi desenvolvida e é mantida pela Microsoft e é construída em cima da linguagem Javascript, permitindo um melhor uso ferramental a qualquer escala \cite{typescript}. Por sua vez, Javascript é uma linguagem leve, interpretada ou compilada \textit{just-in-time} com funções de primeira classe. É uma linguagem multi-paradigma que é usada vastamente em páginas da \textit{Web}, mas também tem ganhado uma popularidade explosiva em sistemas \textit{back-end} e \textit{Mobile} com tecnologias como Node.js e React Native \cite{javascript}.
+Typescript\footnote{\url{https://www.typescriptlang.org/}} é uma linguagem de programação \textit{open-source} fortemente tipada que foi desenvolvida e é mantida pela Microsoft e é construída em cima da linguagem Javascript, permitindo um melhor uso ferramental a qualquer escala \cite{typescript}. Por sua vez, Javascript \cite{javascript} é uma linguagem leve, interpretada ou compilada \textit{just-in-time} com funções de primeira classe. É uma linguagem multi-paradigma que é usada vastamente em páginas da \textit{Web}, mas também tem ganhado uma grande popularidade em sistemas \textit{back-end} e \textit{Mobile} com tecnologias como Node.js e React Native.
 
-A escolha da linguagem se deu por razões pessoais como a familiaridade com a linguagem e devido às opções que o typescript proporciona em relação à tipagem, que têm a capacidade de aumentar a produtividade ao se utilizar editores de texto avançados, assim como diminuir a quantidade de erros em tempo de execução
+A escolha da linguagem se deu por razões como a facilidade do uso e devido às opções que o typescript proporciona em relação à tipagem, que têm a capacidade de aumentar a produtividade ao se utilizar editores de texto avançados, assim como diminuir a quantidade de erros em tempo de execução.
 
 \subsection{React e React Native}
 \label{react-section}
@@ -172,7 +194,7 @@ A sintaxe do React utiliza a extensão de sintaxe do Javascript chamada JSX, que
 
 React Native\footnote{\url{https://reactnative.dev}} compartilha dos mesmos princípios, funcionalidades e sintaxe do React para o desenvolvimento de aplicativos nativos. Os componentes presentes no código escrito em react native são transformados em elementos de interfaces de usuário utilizando a API da própria plataforma onde será executado. O \textit{framework} facilita o desenvolvimento para plataformas móveis de forma a utilizar o mesmo código tanto no Android como no iOS, não exigindo muito retrabalho ao criar suporte a outras plataformas para o aplicativo. Assim como React, o React Native é uma biblioteca \textit{open-source} mantida pela Meta \cite{react-native}.
 
-A escolha das ferramentas para o projeto \appName foi devido à familiaridade com a mesma por parte da dupla, não exigindo um treinamento extensivo para seu uso no projeto. A aplicação móvel, chamada de \textit{front-office} foi desenvolvida usando React Native, enquanto a versão \textit{Web}, \textit{back-office}, foi desenvolvida utilizando React.
+A escolha do React e do React Native para o projeto \appName\ foi devido à familiaridade com elas por parte da dupla, não exigindo um treinamento extensivo para seu uso no projeto. A aplicação móvel, chamada de \textit{Front Office} foi desenvolvida usando React Native, enquanto a versão \textit{Web}, \textit{Back Office}, foi desenvolvida utilizando React.
 
 \subsection{Expo}
 
@@ -186,17 +208,17 @@ Com o uso do Expo, foi também instalado um aplicativo chamado \textit{Expo Go}\
 
 Jest\footnote{\url{https://jestjs.io/pt-BR/}} é um \textit{framework} de testes em javascript que tem como foco, a simplicidade \cite{jest}. É uma ferramenta que tem uma boa documentação e apresenta suporte para projetos que utilizam typescript e react, dentre vários outros. O Jest é mantido pela Meta sob uma licença \textit{open-source}, logo, o seu uso é liberado gratuitamente, assim como o seu código-fonte.
 
-A escolha do Jest como ferramenta de testes se deu principalmente pela familiaridade e pelo suporte nativo do typescript e do React, que são tecnologias que foram utilizadas no desenvolvimento do \appName. O projeto apresenta testes unitários, de integração e features. O uso de testes automatizados facilitou as mudanças no código no decorrer do projeto, de forma a garantir o funcionamento dos códigos mais antigos sem muito esforço adicional.
+A escolha do Jest como ferramenta de testes se deu principalmente pelo suporte nativo do typescript e do React, que são tecnologias que foram utilizadas no desenvolvimento do \appName. O projeto apresenta testes unitários, de integração e features. O uso de testes automatizados facilitou as mudanças no código no decorrer do projeto, de forma a garantir o funcionamento dos códigos mais antigos sem muito esforço adicional.
 
 \subsection{Visual Studio Code}
 
 Visual Studio Code\footnote{\url{https://code.visualstudio.com/}} é um editor de código fonte leve, mas com recursos poderosos, disponível gratuitamente para os sistemas operacionais Windows, Linux e macOS. A ferramenta \textit{open-source} tem suporte \textit{built-in} para JavaScript, TypeScript e Node.js e possui um ecossistema rico de extensões para outras linguagens e ambientes de execução \cite{vscode}.
 
-A escolha do editor foi feita por preferência pessoal dos autores do \appName, sendo os principais fatores decisivos, a familiaridade com a ferramenta, o suporte nativo para Typescript e React e a gratuidade. O Visual Studio Code também inclui o \textit{Intellisense}, que é uma ferramenta que provê \textit{auto-complete} inteligente para o código, baseando-se em análises semânticas da linguagem usada e na análise do código-fonte escrito \cite{intellisense}. O Visual Studio Code juntamente com o Intellisense permitiu uma maior produtividade durante todos o processo de desenvolvimento do aplicativo.
+A escolha do editor foi feita por preferência pessoal dos autores do \appName, sendo os principais fatores decisivos, a familiaridade com a ferramenta, o suporte nativo para Typescript e React e a gratuidade. O Visual Studio Code também inclui o \textit{Intellisense}, que é uma ferramenta que provê \textit{auto-complete} inteligente para o código, baseando-se em análises semânticas da linguagem usada e na análise do código-fonte escrito \cite{intellisense}. O Visual Studio Code juntamente com o \textit{Intellisense} permitiu uma maior produtividade durante todo o processo de desenvolvimento do aplicativo.
 
 \subsection{Firebase}
 \label{firebase}
 
-Firebase\footnote{\url{https://firebase.google.com/}} é uma plataforma de desenvolvimento de aplicações que auxilia na criação e no crescimento delas \cite{firebase}. A plataforma pertence ao Google e é gratuita de forma limitada, sendo necessário aderir a um plano pago para continuar utilizando após atingir uma quota. Dentre os serviços oferecidos, podem ser encontrados serviços de autenticação e gerenciamento de usuários e banco de dados. A plataforma adere à categoria de serviço \textit{low-code}, onde o programador tem acesso a um sistema de \textit{backend} utilizando poucas linhas de código, sendo necessário apenas criar a aplicação que irá consumir os serviços.
+Firebase\footnote{\url{https://firebase.google.com/}} é uma plataforma de desenvolvimento de aplicações que auxilia na criação e no crescimento delas \cite{firebase}. A plataforma pertence ao Google e é gratuita de forma limitada, sendo necessário aderir a um plano pago para continuar utilizando após atingir uma quota. Dentre os serviços oferecidos, podem ser encontrados serviços de autenticação e gerenciamento de usuários e banco de dados. A plataforma adere à categoria de serviço \textit{low-code}, onde o programador tem acesso a um sistema de \textit{back-end} utilizando poucas linhas de código, sendo necessário apenas criar a aplicação que irá consumir os serviços.
 
-O aplicativo desenvolvido utiliza o serviço de autenticação do Firebase e também o banco de dados da plataforma, denominado \textit{Firestore}, que é um banco de dados NoSQL em núvem flexível e escalável para armazenar e sincronizar dados para o desenvolvimento do lado do cliente e do servidor \cite{firestore}. A escolha da ferramenta se deu pela flexibilidade e as boas condições do plano gratuito, que atenderam todas as necessidades do projeto. Por se tratar de um banco de dados NoSQL, o banco de dados utilizado, não foram produzidos artefatos de documentação para demonstrar a forma como os dados estão estruturados e como são relacionados, pois o diagrama de classes já contém todas as informações necessárias. 
+O aplicativo desenvolvido utiliza o serviço de autenticação do Firebase e também o banco de dados da plataforma, denominado \textit{Firestore}, que é um banco de dados NoSQL em núvem flexível e escalável para armazenar e sincronizar dados para o desenvolvimento do lado do cliente e do servidor \cite{firestore}. A escolha da ferramenta se deu pela flexibilidade e as boas condições do plano gratuito, que atenderam todas as necessidades do projeto. Por se tratar de um banco de dados NoSQL, o banco de dados utilizado, não foram produzidos artefatos adicionais de documentação para demonstrar a forma como os dados estão estruturados e como são relacionados, pois o diagrama de classes na \refFig{class_diagram} já contém todas as informações necessárias para a modelagem do banco.
