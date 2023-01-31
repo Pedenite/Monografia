@@ -2,7 +2,7 @@ O desenvolvimento do aplicativo móvel e da plataforma Web \appName\ foi feito u
 
 \section{Processo}
 
-%%% trocar para referências de processo de desenvolvimento
+%%% TODO: trocar para referências de processo de desenvolvimento
 O processo de \textit{software} \cite{processos_software} é visto por uma sequência de atividades que produzem uma variedade de documentos, resultando em um programa satisfatório e executável. Cada vez mais, os processos se mostram tão importantes quanto o \textit{software} em si, sendo indispensáveis para a produção de um produto de maior qualidade. O desenvolvimento da aplicação foi feito utilizando a metodologia ágil Scrum \cite{scrum_guide}.
 
 O movimento ágil da indústria de \textit{software} \cite{agile_software_development} se iniciou com a publicação do manifesto ágil\footnote{\url{https://agilemanifesto.org/}} em 2001 por um grupo de praticantes e consultores de \textit{software} . O manifesto agrega os seguintes valores:
@@ -36,16 +36,16 @@ Diversos recursos e programas foram utilizados para auxiliar nos processos de de
     \item Diagrama de classes (\ref{plantuml}).
 \end{itemize}
 
-Com o protótipo inicial criado e aprovado, foi utilizado um \textit{software} de organização de tarefas chamado \textit{Notion} (\ref{notion}) para realizar o cadastro dos itens a serem implementados no aplicativo e foram criadas histórias de usuário para documentar os critérios de aceite e as funcionalidades a serem desenvolvidas. Com o início da primeira \textit{Sprint}, os primeiros \textit{cards} pendentes de resolução foram divididos entre a dupla e foi iniciado o desenvolvimento da plataforma em questão.
+Com o protótipo inicial do aplicativo móvel criado e aprovado, foi utilizado um \textit{software} de organização de tarefas chamado \textit{Notion} (\ref{notion}) para realizar o cadastro dos itens a serem implementados no aplicativo e foram criadas histórias de usuário para documentar os critérios de aceite e as funcionalidades a serem desenvolvidas. Com o início da primeira \textit{Sprint}, os primeiros \textit{cards} pendentes de resolução foram divididos entre a dupla e foi iniciado o desenvolvimento da plataforma em questão.
 
 A seguir, algumas das ferramentas utilizadas no processo de planejamento e desenvolvimento do \appName\ são descritas, assim como os artefatos produzidos em cada uma delas.
 
 \subsection{Figma}
 \label{figma}
 
-Segundo Connel e Shaffer \cite{prototyping}, um protótipo de \textit{software} é um modelo dinâmico visual que oferece uma ferramenta de comunicação para o cliente e para o desenvolvedor que é bem mais efetiva do que qualquer prosa narrativa ou modelos estáticos visuais para representar funcionalidade. O \textit{software} Figma\footnote{\url{https://www.figma.com/}} é uma plataforma de design hospedada em formato de aplicação \textit{Web} que facilita a criação de protótipos para aplicativos \textit{mobile}, \textit{web}, e muitos outros.
+Segundo Connel e Shaffer \cite{prototyping}, um protótipo de \textit{software} é um modelo dinâmico visual que oferece uma ferramenta de comunicação para o cliente e para o desenvolvedor que é bem mais efetiva do que qualquer prosa narrativa ou modelos estáticos visuais para representar funcionalidade. O \textit{software} Figma\footnote{\url{https://www.figma.com/}} é uma plataforma de design hospedada em formato de aplicação \textit{Web} que facilita a criação de protótipos para aplicativos \textit{mobile}, \textit{web}, entre outros.
 
-A criação dos protótipos foi feita utilizado o Figma de forma gratuita. A plataforma não é de licença livre e permite a criação de conta para o uso gratuito, porém também possui planos pagos de assinatura. Com as ferramentas disponibilizadas pelo figma, foram prototipadas todas as telas do aplicativo de acordo com a ideia inicial do projeto, assim como o fluxo de navegação por parte do usuário final. O protótipo pode ser dividido em 4 partes:
+A criação dos protótipos do aplicativo móvel foi feita utilizado o Figma de forma gratuita. A plataforma não é de licença livre e permite a criação de conta para o uso gratuito, porém também possui planos pagos de assinatura. Com as ferramentas disponibilizadas pelo Figma, foram prototipadas todas as telas do aplicativo de acordo com a ideia inicial do projeto, assim como o fluxo de navegação por parte do usuário final. Não foram prototipadas as telas da aplicação \textit{Web} (\textit{Back Office}) no Figma devido à utilização dos elementos de \textit{UI} da biblioteca \textit{Material UI} \cite{mui}. O protótipo do aplicativo \textit{mobile} pode ser dividido em 4 partes:
 
 \subsubsection{Autenticação}
 
@@ -59,9 +59,9 @@ Definitivamente a parte mais importante do aplicativo, sendo composta por \refFi
 
 \figura[H]{../img/figma_course1.png}{Protótipos de telas contendo a \textit{Home} do aplicativo e seleção de Tópicos}{figma_course1}{width=0.75\textwidth}
 
-Pela \refFig{figma_course2}, é possível visualizar a tela do subtópico com as opções de acessar os desafios disponíveis e o ranking. A tela de desafio contém um enunciado com uma imagem opcional e campos para resposta. Por fim, a tela de classificação vai conter os usuários ordenados pelo melhor aproveitamento do curso.
+Pela \refFig{figma_course2}, é possível visualizar a tela do subtópico com as opções de acessar os desafios disponíveis e o \textit{ranking}. A tela de desafio contém um enunciado com uma imagem opcional e campos para resposta. Por fim, a tela de classificação vai conter os usuários ordenados pelo melhor aproveitamento do curso.
 
-\figura[H]{../img/figma_course2.png}{Protótipos de telas contendo a página de tópico com opções para nevegação para os desafios cadastrados e para o ranking}{figma_course2}{width=0.75\textwidth}
+\figura[H]{../img/figma_course2.png}{Protótipos de telas contendo a página de tópico com opções para nevegação para os desafios cadastrados e para o \textit{ranking}}{figma_course2}{width=0.75\textwidth}
 
 \subsubsection{\textit{Chat}}
 
@@ -103,7 +103,7 @@ Markdown também foi usado no aplicativo e aplicação \textit{Web} para a cria�
 \subsection{\textit{Lucid Chart}}
 \label{lucidChart}
 
-O \textit{Lucid Chart}\footnote{\url{https://www.lucidchart.com/}} é uma ferramenta \textit{online} com plano gratuito para realizar o desenho de fluxos, podendo ser feito de forma colaborativa. Com as ferramentas disponibilizadas pela plataforma, foi criado o fluxograma da \refFig{fluxo_app} para o aplicativo móvel, que mostra as funcionalidades acessíveis pelo usuário final por cada tela. Também é mostrado o funcionamento básico dos desafios incluídos na plataforma, que fornecem uma pontuação ao usuário somente quando a pergunta é respondida corretamente, não incrementando os pontos quando desafio é respondido incorretamente.
+O \textit{Lucid Chart}\footnote{\url{https://www.lucidchart.com/}} é uma ferramenta \textit{online} com plano gratuito para realizar o desenho de fluxos, podendo ser feito de forma colaborativa. Com as ferramentas disponibilizadas pela plataforma, foi criado o fluxograma da \refFig{fluxo_app} para o aplicativo móvel, que mostra as funcionalidades acessíveis pelo usuário final por cada tela. Também é mostrado o funcionamento básico dos desafios incluídos na plataforma, que fornecem uma pontuação ao usuário somente quando a pergunta é respondida corretamente, não incrementando os pontos quando o desafio é respondido incorretamente.
 
 \figura[H]{../img/fluxo_app.png}{Fluxo de utilização do aplicativo móvel \appName\ na visão do usuário}{fluxo_app}{width=\textwidth}
 
@@ -122,7 +122,7 @@ PlantUML \footnote{\url{https://plantuml.com/}} é uma ferramenta que permite es
 
 \figura[H]{../img/class_diagram.png}{Diagrama de classes do \appName}{class_diagram}{width=\textwidth}
 
-Pelo diagrama de classes, é possível visualizar as classes utilzadas no projeto, tanto na versão Front-office quanto Back-office, que refletem diretamente na modelagem do banco de dados não-relacional utilizado. Devido à categoria de banco de dados utilizada (\ref{firebase}), não foram gerados documentos adicionais para uma descrição mais visual da base.
+Pelo diagrama de classes, é possível visualizar as classes utilizadas no projeto, tanto na versão \textit{Front Office} quanto \textit{Back Office}, que refletem diretamente na modelagem do banco de dados não-relacional utilizado. Devido à categoria de banco de dados utilizada (\ref{firebase}), não foram gerados documentos adicionais para uma descrição mais visual da base.
 
 \subsection{Notion}
 \label{notion}
@@ -132,7 +132,7 @@ O software \textit{Notion}\footnote{\url{https://www.notion.so/}} é uma platafo
 \subsection{Git e Git Flow}
 \label{git}
 
-Git\footnote{\url{https://git-scm.com/}} \cite{git} é uma ferrameta ce controle de versão particularmente poderosa e flexível que torna o devenvolvimento colaborativo mais eficiente. A ferramenta foi inventada por Linus Torvalds para suportar o desenvolvimento do \textit{kernel} do Linux, mas se mostrou de grande valor para uma vasta gama de projetos. O Git é distribuído sob a licença \textit{GNU General Public License version 2.0}, que garante a liberdade de compartilhamento e modificação para assegurar a gratuidade de uso por todos os usuários.
+Git\footnote{\url{https://git-scm.com/}} \cite{git} é uma ferrameta de controle de versão particularmente poderosa e flexível que torna o devenvolvimento colaborativo mais eficiente. A ferramenta foi inventada por Linus Torvalds para suportar o desenvolvimento do \textit{kernel} do Linux, mas se mostrou de grande valor para uma vasta gama de projetos. O Git é distribuído sob a licença \textit{GNU General Public License version 2.0}, que garante a liberdade de compartilhamento e modificação para assegurar a gratuidade de uso por todos os usuários.
 
 Durante todo o desenvolvimento do projeto, foi utilizada a ferramenta Git para o controle de versão do código fonte. Para o compartilhamento do código e diferentes versões entre a dupla, foi usado o \textit{GitHub}\footnote{\url{https://github.com/}} como repositório remoto. A plataforma é de uso livre e funciona no formato \textit{Web}, facilitando o uso do Git, assim como acrescentando funcionalidades de organização de projetos que ajudam muito nos processos de desenvolvimento. Foram criados quatro repositórios no total para o projeto no GitHub de forma a promover uma melhor separação de cada plataforma e permitir até permitir o reuso de recursos com o repositório auxiliar.
 
@@ -143,7 +143,7 @@ Durante todo o desenvolvimento do projeto, foi utilizada a ferramenta Git para o
     \item Auxiliar\footnote{\url{https://github.com/Pedenite/monografia-pages}}.
 \end{enumerate}
 
-O primeiro repositório listado é o que armazena todo o código-fonte do aplicativo móvel, assim como o segundo, que armazena o código da aplicação \textit{Web}. O terceiro item, intitulado Monografia contém todos os arquivos para gerar esta monografia e o último foi usado para incluir artefatos adicionais do projeto como páginas \textit{Web} que incluem a política de privacidade, PDFs com as histórias de usuário, entre outros. O repositório auxiliar utiliza de uma funcionalidade do GitHub chamada \textit{GitHub Pages} \cite{github-pages}, que permite a publicação de páginas \textit{Web} diretamente do repositório. Isso permitiu que as políticas de privacidade do aplicativo fossem publicados como um \textit{site}\footnote{\url{https://pedenite.github.io/monografia-pages/}}, assim como os outros artefatos incluídos.
+O primeiro repositório listado é o que armazena todo o código-fonte do aplicativo móvel, assim como o segundo, que armazena o código da aplicação \textit{Web}. O terceiro item, intitulado Monografia contém todos os arquivos para gerar esta monografia e o último foi usado para incluir artefatos adicionais do projeto como páginas \textit{Web} que incluem a política de privacidade, PDFs com as histórias de usuário, entre outros. O repositório auxiliar utiliza de uma funcionalidade do GitHub chamada \textit{GitHub Pages} \cite{github-pages}, que permite a publicação de páginas \textit{Web} diretamente do repositório. Isso permitiu que as políticas de privacidade do aplicativo fossem publicadas como um \textit{site}\footnote{\url{https://pedenite.github.io/monografia-pages/}}, assim como os outros artefatos incluídos.
 
 Em todos os repositórios criados, com exceção da Monografia, foi incluída a licença do MIT, garantindo a livre distribuição e modificação do código-fonte. O repositório da Monografia foi criado por meio de um \textit{fork} do repositório de mesmo nome de autoria do UnB-CIC\footnote{\url{https://github.com/UnB-CIC/Monografia}}, que contém o template para a criação da monografia para os cursos do departamento de computação da Universidade de Brasília. 
 
@@ -152,14 +152,14 @@ Adicionalmente, para aprimorar o uso efetivo do Git, foi utilizado um fluxo de c
 \figura[H]{../img/gitflow.png}{Exemplo visual do Git Flow}{gitflow}{width=\textwidth}
 
 \begin{itemize}
-    \item \textit{Master}: é a principal e não deve ter commits feitos diretamente nela, sendo usada para as \textit{releases} do projeto. 
+    \item \textit{Master}: é a principal e não deve ter \textit{commits} feitos diretamente nela, sendo usada para as \textit{releases} do projeto. 
     \item \textit{Hotfix}: é usada quando são descobertos erros na \textit{Master}, para corrigir o mais rápido possível.
     \item \textit{Develop}: vai acompanhar a \textit{Master}, inclusive sendo gerada a partir dela no início do projeto, e a partir dela que são geradas as \textit{branches} de \textit{Feature} e \textit{Bugfix}, caso necessário.
-    \item \textit{Bugfix}: usadas para corrigir problemas encontrados na \textit{branch Develop} antes de realizar o \textit{merge} com a \textit{Master}, que pode representar um ambiente de produção, assim evitando problemas bem mais catastróficos.
+    \item \textit{Bugfix}: usadas para corrigir problemas encontrados na \textit{branch Develop} antes de realizar o \textit{merge} com a \textit{Master}, que pode representar um ambiente de produção, assim evitando problemas possivelmente catastróficos.
     \item \textit{Feature}: representam os recursos incrementais do projeto como novas funcionalidades ou melhorias. Foi o tipo de \textit{branch} mais usado no projeto, sendo criada uma \textit{branch} para cada \textit{card} que não represente um defeito no Notion.
 \end{itemize}
 
-O uso do gitflow permitiu uma organização melhor do projeto para a realização do desenvolvimento de diversas funcionalidades simultaneamente sem interferência de uma nas outras. Com o uso dos \textit{Pull requests} do Github, foi possível aprimorar ainda mais o processo de \textit{merge} com a \textit{branch Develop} após o desenvolvimento de funcionalidades incluindo o \textit{Code Review} para a aprovação do item, permitindo uma melhor integração da dupla e conhecimento sobre o \textit{status} do projeto.
+O uso do \textit{Git Flow} permitiu uma organização melhor do projeto para a realização do desenvolvimento de diversas funcionalidades simultaneamente sem interferência de uma nas outras. Com o uso dos \textit{Pull requests} do Github, foi possível aprimorar ainda mais o processo de \textit{merge} com a \textit{branch Develop} após o desenvolvimento de funcionalidades incluindo o \textit{Code Review} para a aprovação do item, permitindo uma melhor integração da dupla e conhecimento sobre o \textit{status} do projeto.
 
 \section{Tecnologias Utilizadas}
 
@@ -170,14 +170,14 @@ Para o desenvolvimento do projeto de \textit{software}, diversas tecnologias for
 Android\footnote{\url{https://www.android.com/}} é o sistema operacional para \textit{smartphones} mais utilizado na atualidade, possuindo uma quota de mercado de 71.96\% segundo dados de Novembro de 2022 \cite{mobile-os}. Trata-se de um sistema \textit{open-source}, distribuído, em maior parte, sob a licença \textit{Apache 2.0}, mas por ser baseado em Linux, tem o seu \textit{kernel} distribuído sob a licença \textit{GPLv2}. Android é composto por uma pilha criada para suportar uma vasta quantidade de dispositivos e aspectos dos mesmos \cite{android}. A hierarquia do sistema pode ser vista da seguinte forma:
 
 \begin{itemize}
-    \item \textbf{Aplicativos do sistema}: Todos os aplicativos que interagem diretamente com o usuário como calculadora, câmera, e-mail, entre outros;
-    \item \textbf{Java API Framework}: Provedores de conteúdo, sistema de views e gerenciadores responsáveis por manter os aplicativos funcionando para o usuário final;
-    \item \textbf{Bibliotecas C/C++ nativas e Runtime do Android}: Bibliotecas e funcionalidades requeridas pelos componentes e serviços do Android como o OpenGL e \textit{Android Core Libraries};
-    \item \textbf{Hardware Abstract Layer (HAL)}: Camada de abstração de \textit{hardware}, é responsável por garantir o correto funcionamento das funcionalidades disponibilizadas pelo Android por meio de qualquer equipamento equipado ao aparelho como câmera, microfone, saída de audio, \textit{bluetooth}, entre outros.
-    \item \textbf{Linux Kernel}: A fundação de todo o sistema Android, fornece funcionalidades de segurança, concorrência, gerenciamento de memória, entre muitos outros recursos de baixo nível para todas as camadas acima. Por ser um produto que já está no mercado a algumas décadas, também facilita para os fabricantes desenvolverem aparelhos para um \textit{Kernel} mais conhecido.
+    \item \textbf{Aplicativos do sistema}: Todos os aplicativos que interagem diretamente com o usuário como calculadora, câmera, \textit{e-mail}, entre outros;
+    \item \textbf{\textit{Java API Framework}}: Provedores de conteúdo, sistema de \textit{views} e gerenciadores responsáveis por manter os aplicativos funcionando para o usuário final;
+    \item \textbf{Bibliotecas C/C++ nativas e \textit{Runtime} do Android}: Bibliotecas e funcionalidades requeridas pelos componentes e serviços do Android como o OpenGL e \textit{Android Core Libraries};
+    \item \textbf{\textit{Hardware Abstract Layer (HAL)}}: Camada de abstração de \textit{hardware}, é responsável por garantir o correto funcionamento das funcionalidades disponibilizadas pelo Android por meio de qualquer equipamento pertencente ao aparelho como câmera, microfone, saída de audio, \textit{bluetooth}, entre outros.
+    \item \textbf{\textit{Kernel} do Linux}: A fundação de todo o sistema Android, fornece funcionalidades de segurança, concorrência, gerenciamento de memória, entre muitos outros recursos de baixo nível para todas as camadas acima. Por ser um produto que já está no mercado a algumas décadas, também facilita para os fabricantes desenvolverem aparelhos para um \textit{Kernel} mais conhecido.
 \end{itemize}
 
-Todo o código do aplicativo \appName\ foi testado no sistema Android, porém, devido a utilização do React Native (\ref{react-section}) no código-fonte, o aplicativo é capaz de executar em dispositivos iOS também. Devido a falta de testes para a plataforma do iOS, não há garantias do correto funcionamento de todas as funcionalidades, ao contrário da versão para sistemas Android.
+Todo o código do aplicativo \appName\ foi testado no sistema Android, porém, devido a utilização do React Native (\ref{react-section}) no código-fonte, o aplicativo é capaz de executar em dispositivos iOS também. Porém, devido à falta de testes para a plataforma do iOS, não há garantias do correto funcionamento de todas as funcionalidades, ao contrário da versão para sistemas Android.
 
 \subsection{Typescript}
 
@@ -190,35 +190,39 @@ A escolha da linguagem se deu por razões como a facilidade do uso e devido às 
 
 React\footnote{\url{https://reactjs.org/}} é uma biblioteca Javascript para realizar a criação de interfaces de usuário. Trata-se de um projeto \textit{open-source}, sob a licença do MIT, criado e mantido pela empresa Meta. A ideia geral da biblioteca é ser declarativa, baseada em componentes e multi-plataforma, permitindo a criação de um código modularizado mais simples de debugar, e que pode ser convertido para outras plataformas de forma relativamente fácil \cite{react}.
 
-A sintaxe do React utiliza a extensão de sintaxe do Javascript chamada JSX, que se assemelha muito com a sintaxe de linguagens de marcação de texto como HTML e XML, porém traduzindo a sintaxe para códigos Javascript. Por este motivo, a biblioteca pode ser aprendida com uma certa facilidade por desenvolvedores que já estejam familiarizados com o desenvolvimento web nativo usando HTML.
+A sintaxe do React utiliza a extensão de sintaxe do Javascript chamada JSX, que se assemelha muito com a sintaxe de linguagens de marcação de texto como HTML e XML, porém traduzindo a sintaxe para códigos Javascript. Por este motivo, a biblioteca pode ser aprendida com uma certa facilidade por desenvolvedores que já estejam familiarizados com o desenvolvimento \textit{Web} nativo usando HTML.
 
-React Native\footnote{\url{https://reactnative.dev}} compartilha dos mesmos princípios, funcionalidades e sintaxe do React para o desenvolvimento de aplicativos nativos. Também é um \textit{framework} distribuído sob a licença do MIT, garantindo que seu código seja considerado aberto. Os componentes presentes no código escrito em react native são transformados em elementos de interfaces de usuário utilizando a API da própria plataforma onde será executado. O \textit{framework} facilita o desenvolvimento para plataformas móveis de forma a utilizar o mesmo código tanto no Android como no iOS, não exigindo muito retrabalho ao criar suporte a outras plataformas para o aplicativo. Assim como React, o React Native é uma biblioteca \textit{open-source} mantida pela Meta \cite{react-native}.
+React Native\footnote{\url{https://reactnative.dev}} compartilha dos mesmos princípios, funcionalidades e sintaxe do React para o desenvolvimento de aplicativos nativos. Também é um \textit{framework} distribuído sob a licença do MIT, garantindo que seu código seja considerado aberto. Os componentes presentes no código escrito em react native são transformados em elementos de interfaces de usuário utilizando a \textit{API} da própria plataforma onde será executado. O \textit{framework} facilita o desenvolvimento para plataformas móveis de forma a utilizar o mesmo código tanto no Android como no iOS, não exigindo muito retrabalho ao criar suporte a outras plataformas para o aplicativo. Assim como React, o React Native é uma biblioteca \textit{open-source} mantida pela Meta \cite{react-native}.
 
 A escolha do React e do React Native para o projeto \appName\ foi devido à familiaridade com elas por parte da dupla, não exigindo um treinamento extensivo para seu uso no projeto. A aplicação móvel, chamada de \textit{Front Office} foi desenvolvida usando React Native, enquanto a versão \textit{Web}, \textit{Back Office}, foi desenvolvida utilizando React.
 
+\subsection{\textit{Material UI}}
+
+\textit{Material UI} \cite{mui} é uma biblioteca que disponibiliza elementos gráficos para páginas \textit{Web} em React. Os elementos de \textit{UI} foram utilizados extensivamente por todas as telas da aplicação. Os principais motivos da escolha da biblioteca foi a facilidade de uso, o suporte para o Typescript e React e os \textit{designs} agradáveis dos componentes.
+
 \subsection{Expo}
 
-Expo\footnote{\url{https://expo.dev/}} é uma plataforma \textit{open-source}, distribuída sob a linceção BSD para a criação de aplicativos nativos para Android, iOS e Web com Javascript e React \cite{expo}. A plataforma foi usada na versão \textit{mobile} do \appName\ para facilitar o uso de tecnologias nativas do Android, mas também facilitaria para o iOS, porém este não foi testado e, portanto não existe garantias de funcionamento.
+Expo\footnote{\url{https://expo.dev/}} é uma plataforma \textit{open-source}, distribuída sob a licença BSD para a criação de aplicativos nativos para Android, iOS e \textit{Web} com Javascript e React \cite{expo}. A plataforma foi usada na versão \textit{mobile} do \appName\ para facilitar o uso de tecnologias nativas do Android, mas também facilitaria para o iOS, porém este não foi testado e, portanto não existem garantias de funcionamento.
 
-Com o uso do Expo, foi também instalado um aplicativo chamado \textit{Expo Go}\footnote{\url{https://play.google.com/store/apps/details?id=host.exp.exponent}} para facilitar o teste durante o desenvolvimento. O aplicativo em questão permite a execução de aplicativos que utilizam a plataforma expo sem a necessidade de instalá-los no dispositivo, bastando acessar um link disponibilidado pela ferramenta ou ler um QR Code com a câmera do dispositivo, permitindo também a distribuição do \textit{app} por este meio. O aplicativo do \appName\ foi disponibilizado para execução por meio do aplicativo Expo Go por um link gerado pela ferramenta\footnote{\url{https://expo.dev/@pedenite/algoritmia?serviceType=classic&distribution=expo-go}}, permitindo a distribuição para testes.
+Com o uso do Expo, foi também instalado um aplicativo chamado \textit{Expo Go}\footnote{\url{https://play.google.com/store/apps/details?id=host.exp.exponent}} para facilitar o teste durante o desenvolvimento. O aplicativo em questão permite a execução de aplicativos que utilizam a plataforma expo sem a necessidade de instalá-los no dispositivo, bastando acessar um \textit{link} disponibilidado pela ferramenta ou realizar a leitura de um \textit{QR Code} com a câmera do dispositivo, permitindo também a distribuição do \textit{app} por este meio. O aplicativo do \appName\ foi disponibilizado para execução por meio do aplicativo \textit{Expo Go} por meio de uma \textit{URL} gerada\footnote{\url{https://expo.dev/@pedenite/algoritmia?serviceType=classic&distribution=expo-go}}, permitindo a distribuição para testes.
 
 \subsection{Jest}
 
 \textit{Softwares} devem ser testados para transmitir a confiabilidade, ou seja, garantir o correto funcionamento nos ambientes intencionados \cite{test_automation}. A automação dos testes pode reduzir significativamente o esforço necessário para a realização adequada dos testes, assim como aumentar a quantidade de testes realizados durante um espaço de tempo limitado.
 
-Jest\footnote{\url{https://jestjs.io/pt-BR/}} é um \textit{framework} de testes em javascript que tem como foco, a simplicidade \cite{jest}. É uma ferramenta que tem uma boa documentação e apresenta suporte para projetos que utilizam typescript e react, dentre vários outros. O Jest é mantido pela Meta sob a licença do MIT, fazendo-o \textit{open-source}, logo, o seu uso é liberado gratuitamente, assim como o seu código-fonte.
+Jest\footnote{\url{https://jestjs.io/pt-BR/}} é um \textit{framework} de testes em javascript que tem como foco, a simplicidade \cite{jest}. É uma ferramenta que tem uma boa documentação e apresenta suporte para projetos que utilizam Typescript e React, dentre vários outros. O Jest é mantido pela Meta sob a licença do MIT, fazendo-o \textit{open-source}, logo, o seu uso é liberado gratuitamente, assim como o seu código fonte.
 
-A escolha do Jest como ferramenta de testes se deu principalmente pelo suporte nativo do typescript e do React, que são tecnologias que foram utilizadas no desenvolvimento do \appName. O projeto apresenta testes unitários, de integração e features. O uso de testes automatizados facilitou as mudanças no código no decorrer do projeto, de forma a garantir o funcionamento dos códigos mais antigos sem muito esforço adicional.
+A escolha do Jest como ferramenta de testes se deu principalmente pelo suporte nativo do Typescript e do React, que são tecnologias que foram utilizadas no desenvolvimento do \appName. O projeto apresenta testes unitários, de integração e features. O uso de testes automatizados facilitou as mudanças no código no decorrer do projeto, de forma a garantir o funcionamento dos códigos mais antigos após incrementos ou correções sem muito esforço adicional.
 
 \subsection{Visual Studio Code}
 
 Visual Studio Code\footnote{\url{https://code.visualstudio.com/}} é um editor de código fonte leve, mas com recursos poderosos, disponível gratuitamente para os sistemas operacionais Windows, Linux e macOS. A ferramenta \textit{open-source} com a licença do MIT tem suporte \textit{built-in} para JavaScript, TypeScript e Node.js e possui um ecossistema rico de extensões para outras linguagens e ambientes de execução \cite{vscode}.
 
-A escolha do editor foi feita por preferência pessoal dos autores do \appName, sendo os principais fatores decisivos, a familiaridade com a ferramenta, o suporte nativo para Typescript e React e a gratuidade. O Visual Studio Code também inclui o \textit{Intellisense}, que é uma ferramenta que provê \textit{auto-complete} inteligente para o código, baseando-se em análises semânticas da linguagem usada e na análise do código-fonte escrito \cite{intellisense}. O Visual Studio Code juntamente com o \textit{Intellisense} permitiu uma maior produtividade durante todo o processo de desenvolvimento do aplicativo.
+A escolha do editor foi feita por preferência pessoal dos autores do \appName, sendo os principais fatores decisivos, a familiaridade com a ferramenta, o suporte nativo para Typescript e React e a gratuidade. O Visual Studio Code também inclui o \textit{Intellisense}, que é uma ferramenta que provê \textit{auto-complete} inteligente para o código, baseando-se em análises semânticas da linguagem usada e na análise do código-fonte escrito \cite{intellisense}. O Visual Studio Code juntamente com o \textit{Intellisense} permitiu uma maior produtividade durante todo o processo de desenvolvimento do \appName.
 
 \subsection{Firebase}
 \label{firebase}
 
 Firebase\footnote{\url{https://firebase.google.com/}} é uma plataforma de desenvolvimento de aplicações que auxilia na criação e no crescimento delas \cite{firebase}. A plataforma pertence ao Google e é gratuita de forma limitada, sendo necessário aderir a um plano pago para continuar utilizando após atingir uma quota. Dentre os serviços oferecidos, podem ser encontrados serviços de autenticação e gerenciamento de usuários e banco de dados. A plataforma adere à categoria de serviço \textit{low-code}, onde o programador tem acesso a um sistema de \textit{back-end} utilizando poucas linhas de código, sendo necessário apenas criar a aplicação que irá consumir os serviços.
 
-O aplicativo desenvolvido utiliza o serviço de autenticação do Firebase e também o banco de dados da plataforma, denominado \textit{Firestore}, que é um banco de dados NoSQL em núvem flexível e escalável para armazenar e sincronizar dados para o desenvolvimento do lado do cliente e do servidor \cite{firestore}. A escolha da ferramenta se deu pela flexibilidade e as boas condições do plano gratuito, que atenderam todas as necessidades do projeto. Por se tratar de um banco de dados NoSQL, o banco de dados utilizado, não foram produzidos artefatos adicionais de documentação para demonstrar a forma como os dados estão estruturados e como são relacionados, pois o diagrama de classes na \refFig{class_diagram} já contém todas as informações necessárias para a modelagem do banco.
+O aplicativo desenvolvido utiliza o serviço de autenticação do Firebase e também o banco de dados da plataforma, denominado \textit{Firestore}, que é um banco de dados NoSQL em núvem flexível e escalável para armazenar e sincronizar dados para o desenvolvimento do lado do cliente e do servidor \cite{firestore}. A escolha da ferramenta se deu pela flexibilidade e as boas condições do plano gratuito, que atenderam todas as necessidades do projeto. Por se tratar de um banco de dados NoSQL, não foram produzidos artefatos adicionais de documentação para demonstrar a forma como os dados estão estruturados e como são relacionados, pois o diagrama de classes na \refFig{class_diagram} já contém todas as informações necessárias para a modelagem do banco.
