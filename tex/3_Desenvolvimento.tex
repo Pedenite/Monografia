@@ -78,22 +78,24 @@ Rota composta por 3 telas mostradas na \refFig{figma_account}, acessíveis pela 
 \subsection{Markdown}
 \label{hus}
 
-Markdown \cite{markdown} é uma linguagem de marcação de texto leve para a criação de textos formatados utilizando um simples editor de texto. O formato tem a licença \textit{open-source} BSD, que permite a redistribuição do código-fonte desde que mantidos os direitos autorais. As histórias de usuário da aplicação foram criadas utilizando a linguagem Markdown conforme o exemplo a seguir:
+Markdown \cite{markdown} é uma linguagem de marcação de texto leve para a criação de textos formatados utilizando um simples editor de texto. O formato tem a licença \textit{open-source} BSD, que permite a redistribuição do código-fonte desde que mantidos os direitos autorais. As histórias de usuário da aplicação foram criadas utilizando a linguagem Markdown conforme o exemplo a seguir, que descreve a funcionalidade de realizar desafios no \textit{Front Office} pela visão do usuário:
 
-\textbf{Como} usuário, 
-\textbf{eu quero} ser capaz de fazer login com as minhas credenciais no sistema, 
-\textbf{para} acessar as funcionalidades da plataforma.
+\textbf{Como} estudante, 
+\textbf{eu quero} ser capaz de realizar os desafios existentes, 
+\textbf{para} consolidar os meus conhecimentos e aumentar a minha colocação no \textit{ranking}.
 
 Critério de Aceitação 01:
 \begin{enumerate}
-    \item Usuário digita as suas credenciais corretamente e pressiona no botão de login;
-    \item Usuário acessa a ferramenta normalmente com a sua conta.
-\end{enumerate}
-
-Criério de Aceitação 02:
-\begin{enumerate}
-    \item Usuário digita as credenciais incorretas e pressiona o botão de login;
-    \item Acesso negado e mensagem de erro explicativa é mostrada na tela.
+    \item Usuário logado acessa o time que contém o curso que deseja fazer;
+    \item Usuário acessa os tópicos do curso pela tela \textit{Home};
+    \item Usuário visualiza os subtópicos pertencentes ao tópico pai com seu progresso de conclusão dos desafios presentes a cada um;
+    \item Usuário acessa os desafios de um subtópico;
+    \item Usuário é levado para o primeiro desafio do tópico, onde terá acesso às funções de avançar para o próximo desafio ou voltar para o anterior;
+    \item Se o desafio ainda não estiver respondido, o usuário será capaz de responder, senão, o botão de responder será desabilitado e o usuário apenas poderá visualizar a sua resposta e qual é a resposta correta;
+    \item Ao pular ou responder o último desafio, o usuário será redirecionado para a tela de \textit{feedback};
+    \item Será exibida a quantidade de questões acertadas, com erro e não respondidas, assim como a quantidade de pontos obtida em cada desafio respondido;
+    \item Usuário será capaz de revisar as respostas ou retornar aos subtópicos por meio de botões presentes na extremidade inferior da tela.
+    \item Ao visualizar o \textit{ranking} novamente, a sua pontuação terá sido alterada com base nos pontos ganhos mostrados no \textit{feedback}, tendo a possibilidade de subir de posição.
 \end{enumerate}
 
 As demais histórias de usuário podem ser acessadas por meio do repositório auxiliar\footnote{\url{https://pedenite.github.io/monografia-pages/user_stories.pdf}} criado para o projeto no GitHub (\ref{git}).
